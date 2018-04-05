@@ -1,4 +1,5 @@
 # Ubuntu-onStart.sh
+[![Build Status](https://travis-ci.org/przemyslawjanpietrzak/ubuntu-onStart.svg?branch=master)](https://travis-ci.org/przemyslawjanpietrzak/ubuntu-onStart)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Script for prepare fresh ubuntu instance to developers needs, like python, node, docker, vscode etc etc
