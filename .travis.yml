@@ -3,4 +3,4 @@ sudo: true
 install:
   - sudo ./main.sh
 script:
-  echo 'success'
+  ./test.sh && echo 'success'
