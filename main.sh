@@ -10,11 +10,12 @@ sudo apt install curl httpie jq -y
 sudo apt install vim -y
 
 sudo apt-get install redshift redshift-gtk -y
-echo 'redshift-gtk' >> .bashrc
 
 sudo apt-get install yakuake -y
 
 sudo apt install git git-core git-flow -y
+git config --global user.name "Przemyslaw Jan Pietrzak"
+git config --global user.email "przemyslaw.jan.pietrzak@gmail.com"
 sudo apt install zsh -y
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 echo 'zsh' >> .bashrc
