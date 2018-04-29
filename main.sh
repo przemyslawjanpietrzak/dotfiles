@@ -5,6 +5,7 @@ sudo add-apt-repository -y "deb https://packages.microsoft.com/repos/vscode stab
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB3E94ADBE1229CF
 sudo apt update
 sudo apt -y install code
+mv vscode_settings.json ~/.config/Code/User/settings.json
 
 sudo apt install curl httpie jq -y
 sudo apt install vim -y
@@ -34,6 +35,7 @@ sudo apt-get install python-pip -y
 sudo apt-get install python-dev -y
 sudo apt-get install python3-dev -y
 sudo apt-get install build-essential -y
+sudo apt install flake8 -y
 sudo pip install virtualenv virtualenvwrapper
 sudo pip install --upgrade pip
 echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .zshrc
@@ -61,7 +63,6 @@ sudo apt-get install docker-ce -y
 
 sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
-docker-compose --version
 
 sudo usermod -aG docker ${USER}
 
