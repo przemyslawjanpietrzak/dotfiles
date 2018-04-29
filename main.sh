@@ -30,8 +30,11 @@ sudo apt-get install spotify-client -y
 sudo apt-get install vlc browser-plugin-vlc -y
 
 sudo apt install uwsgi -y
-sudo apt-get install python-pip python-dev python3.5-dev build-essential -y
-sudo pip install virtualenv virtualenvwrapper
+sudo apt-get install python-pip -y
+sudo apt-get install python-dev -y
+sudo apt-get install python3.5-dev -y
+sudo apt-get install build-essential -y
+sudo pip install virtualenv virtualenvwrapper -y
 sudo pip install --upgrade pip
 echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .zshrc
 sudo apt install ipython -y
