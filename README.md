@@ -4,6 +4,10 @@
 
 Script for prepare fresh ubuntu instance to developers needs, like python, node, docker, vscode etc etc
 
+### Run:
+`sudo bash <(curl -s https://raw.githubusercontent.com/przemyslawjanpietrzak/ubuntu-onStart/master/main.sh)`
+
+
 ### Contains:
 
 ###### Common:
