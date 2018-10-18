@@ -47,6 +47,8 @@ Script for prepare fresh ubuntu instance to developers needs, like python, node,
 
 ⋅⋅⋅ [yarn](https://yarnpkg.com/en/)
 
+⋅⋅⋅ [npm-check](https://www.npmjs.com/package/npm-check)
+
 
 ###### Python:
 
