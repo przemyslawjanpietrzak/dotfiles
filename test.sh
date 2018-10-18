@@ -18,4 +18,4 @@ virtualenv --version &&\
 ipython --version &&\
 \
 docker --version &&\
-docker-compose --version &&\
+docker-compose --version
