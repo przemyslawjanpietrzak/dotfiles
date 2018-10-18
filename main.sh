@@ -48,6 +48,7 @@ sudo apt-get install keepass2 xdotool -y
 sudo apt install nodejs -y
 sudo apt install nodejs-legacy -y
 sudo apt install npm -y
+sudo npm install -g npm-check
 
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
