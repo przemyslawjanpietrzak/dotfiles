@@ -1,21 +1,21 @@
-code --version &&\
-vim --version &&\
-http --version &&\
-jq --version &&\
-redshift -V &&\
-yakuake --version &&\
-git --version &&\
-zsh --version &&\
-chromium-browser --version &&\
+echo "1" && code --version &&\
+echo "2" && vim --version &&\
+echo "3" && http --version &&\
+echo "4" && jq --version &&\
+echo "5" && redshift -V &&\
+echo "6" && yakuake --version &&\
+echo "7" && git --version &&\
+echo "8" && zsh --version &&\
+echo "9" && chromium-browser --version &&\
 \
-node --version &&\
-npm --version &&\
-yarn --version &&\
-npm-check --help &&\
+echo "1" && node --version &&\
+echo "1" && npm --version &&\
+echo "1" && yarn --version &&\
+echo "1" && npm-check --help &&\
 \
-pip --version &&\
-virtualenv --version &&\
-ipython --version &&\
+echo "1" && pip --version &&\
+echo "1" && virtualenv --version &&\
+echo "1" && ipython --version &&\
 \
-docker --version &&\
+echo "1" && docker --version &&\
 docker-compose --version
