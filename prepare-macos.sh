@@ -2,4 +2,4 @@
 brew install just &&\
 brew install bat &&\
 brew install wget &&\
-
+brew install git-flow
