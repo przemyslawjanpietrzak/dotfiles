@@ -7,7 +7,7 @@ brew install htop
 brew install googler
 brew install jq
 brew install tldr
-brew install fd 
+brew install fd
 
 # browsers
 brew cask install brave-browser
@@ -20,16 +20,19 @@ brew cask install visual-studio-code
 brew cask install iterm2
 brew cask install slack
 brew cask install keepassx
+brew cask install flux
 
 # window managers
 brew cask install amethyst
 
 # node
 brew install node
-Brew install yarn
+brew install yarn
 
 # git
 brew install git git-flow
+brew install git-flow
+brew install tig
 
 # python
 sudo easy_install pip
@@ -51,7 +54,7 @@ git clone https://github.com/powerline/fonts
 cd fonts
 ./install.sh
 cd ..
-Git clone https://github.com/wesbos/Cobalt2-iterm.git
+git clone https://github.com/wesbos/Cobalt2-iterm.git
 cd ..
 
 # ssh
