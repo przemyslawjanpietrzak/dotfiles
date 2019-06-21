@@ -66,5 +66,8 @@ brew cask install vlc
 brew install transmission
 brew cask install spotify
 
+# aws
+pip3 install awscli --upgrade --user
+
 # space-vim
 curl -sLf https://spacevim.org/install.sh | bash
