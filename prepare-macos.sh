@@ -28,6 +28,10 @@ brew cask install amethyst
 # node
 brew install node
 brew install yarn
+brew install nvm
+echo "# NVM" >> .zshrc
+echo "export NVM_DIR=~/.nvm" >> .zshrc
+echo "source \$(brew --prefix nvm)/nvm.sh" >> .zshrc
 
 # git
 brew install git git-flow
