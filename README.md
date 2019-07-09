@@ -1,6 +1,6 @@
 # Ubuntu-onStart.sh
 
-[![Build Status](https://travis-ci.org/przemyslawjanpietrzak/ubuntu-onStart.svg?branch=master)](https://travis-ci.org/przemyslawjanpietrzak/ubuntu-onStart)
+[![Build Status](https://travis-ci.org/przemyslawjanpietrzak/dotfiles.svg?branch=master)](https://travis-ci.org/przemyslawjanpietrzak/dotfiles)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Script for prepare fresh OS instance to developers needs, like python, node, docker, vscode etc ...
@@ -57,10 +57,10 @@ done
 - docker for amc
 
 ##### ssh
-tunnelblick
-openssh
+- tunnelblick
+- openssh
 
 #### media
-vlc
-transmission
-spotify
+- vlc
+- transmission
+- spotify

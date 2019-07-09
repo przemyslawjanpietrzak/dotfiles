@@ -7,6 +7,7 @@ brew install bat
 brew install wget
 brew install midnight-commander
 brew install htop
+brew install httpie
 brew install googler
 brew install jq
 brew install tldr

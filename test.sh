@@ -1,20 +1,14 @@
-code --version
-vim --version
-http --version
-jq --version
-redshift -V
-yakuake --version
-git --version
-zsh --version
-chromium-browser --version
-
-node --version
-npm --version
-yarn --version
-
-pip --version
-virtualenv --version
-ipython --version
-
-docker --version
+code --version &&\
+http --version  &&\
+jq --version  &&\
+git --version &&\
+zsh --version &&\
+node --version &&\
+npm --version &&\
+yarn --version &&\
+nvm --version &&\
+pip --version &&\
+virtualenv --version &&\
+ipython --version &&\
+docker --version &&\
 docker-compose --version

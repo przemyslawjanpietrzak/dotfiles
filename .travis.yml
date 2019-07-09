@@ -1,6 +1,7 @@
 language: bash
+os: osx
 sudo: true
 install:
-  - sudo ./main.sh
+  - sudo ./prepare-macos.sh
 script:
-  ./test.sh && echo 'success'
+  ./test.sh
