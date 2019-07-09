@@ -1,66 +1,66 @@
 # Ubuntu-onStart.sh
+
 [![Build Status](https://travis-ci.org/przemyslawjanpietrzak/ubuntu-onStart.svg?branch=master)](https://travis-ci.org/przemyslawjanpietrzak/ubuntu-onStart)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Script for prepare fresh ubuntu instance to developers needs, like python, node, docker, vscode etc etc
+Script for prepare fresh OS instance to developers needs, like python, node, docker, vscode etc ...
 
-### Run:
-`sudo bash <(curl -s https://raw.githubusercontent.com/przemyslawjanpietrzak/ubuntu-onStart/master/main.sh)`
+### Prepare ubuntu:
 
+`curl -sLf https://raw.githubusercontent.com/przemyslawjanpietrzak/ubuntu-onStart/master/prepare-ubuntu.sh) | bash`
 
-### Contains:
+### Prepare macos:
 
-###### Common:
+`curl -sLf https://raw.githubusercontent.com/przemyslawjanpietrzak/ubuntu-onStart/master/prepare-macos.sh) | bash`
 
-⋅⋅⋅ [vscode](https://www.google.com)
+### To install vscode extensions
+```bash
+cat .vscode/extensions.txt | while read line ; do
+  code --install-extension $line
+done
+```
 
-⋅⋅⋅ [vim](https://www.vim.org/)
+### Contains :
 
-⋅⋅⋅ [curl](https://curl.haxx.se/)
+#### CLI tools:
+- just
+- bat
+- wget
+- midnight-commander
+- htop
+- googler
+- jq
+- tldr
+- fd
 
-⋅⋅⋅ [httpie](https://github.com/jakubroztocil/httpie)
+#### Dev tools
+- webstorm
+- visual-studio-code
+- iterm2
+- slack
+- keepassx
+- flux
 
-⋅⋅⋅ [jq](https://stedolan.github.io/jq/)
+#### Node:
+- npm
+- yarn
+- nvm
 
-⋅⋅⋅ [redshift](http://jonls.dk/redshift/)
+#### Python:
+- ipython
+- pip
+- virtualenv
 
-⋅⋅⋅ [yakuake](https://www.kde.org/applications/system/yakuake/)
+#### Docker:
+- docker
+- docker compose
+- docker for amc
 
-⋅⋅⋅ [git](https://git-scm.com/)
+##### ssh
+tunnelblick
+openssh
 
-⋅⋅⋅ [zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH)
-
-⋅⋅⋅ [chromium-browser](https://www.chromium.org/getting-involved/download-chromium)
-
-⋅⋅⋅ [spotify](https://www.spotify.com/)
-
-⋅⋅⋅ [vlc](https://www.videolan.org/vlc/index.pl.html)
-
-⋅⋅⋅ [keepass2](https://keepass.info/)
-
-
-###### NodeJS:
-
-⋅⋅⋅ [node](https://nodejs.org/en/)
-
-⋅⋅⋅ [npm](https://www.npmjs.com/)
-
-⋅⋅⋅ [yarn](https://yarnpkg.com/en/)
-
-
-###### Python:
-
-⋅⋅⋅ [pip](https://pypi.python.org/pypi/pip)
-
-⋅⋅⋅ [virtualenv](https://virtualenv.pypa.io/en/stable/)
-
-⋅⋅⋅ [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
-
-⋅⋅⋅ [ipython](https://ipython.org/)
-
-
-###### Docker:
-
-⋅⋅⋅ [docker](https://www.docker.com/)
-
-⋅⋅⋅ [docker-compose](https://docs.docker.com/compose/)
+#### media
+vlc
+transmission
+spotify

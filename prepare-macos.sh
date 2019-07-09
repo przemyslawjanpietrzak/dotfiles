@@ -1,4 +1,7 @@
+# install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# cli tools
 brew install just
 brew install bat
 brew install wget
@@ -25,6 +28,17 @@ brew cask install flux
 # window managers
 brew cask install amethyst
 
+# git
+brew install git
+brew install git-flow
+brew install tig
+
+# zsh
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s $(which zsh)
+echo 'zsh' >> .bash_profile
+
 # node
 brew install node
 brew install yarn
@@ -33,11 +47,6 @@ echo "# NVM" >> .zshrc
 echo "export NVM_DIR=~/.nvm" >> .zshrc
 echo "source \$(brew --prefix nvm)/nvm.sh" >> .zshrc
 
-# git
-brew install git git-flow
-brew install git-flow
-brew install tig
-
 # python
 sudo easy_install pip
 pip install --user powerline-status
@@ -45,11 +54,6 @@ pip install ipython
 brew install python3
 pip3 install ipython
 
-# zsh
-brew install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s $(which zsh)
-echo 'zsh' >> .bash_profile
 
 # stuff
 mkdir code
@@ -59,6 +63,11 @@ cd fonts
 ./install.sh
 cd ..
 git clone https://github.com/wesbos/Cobalt2-iterm.git
+git clone https://github.com/przemyslawjanpietrzak/dotfiles
+cd dotfiles
+mkdir -p ~/.vscode
+cp vscode/settings.json ~/.vscode/settings.json
+cd ..
 cd ..
 
 # ssh
