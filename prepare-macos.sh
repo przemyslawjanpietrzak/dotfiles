@@ -17,6 +17,7 @@ brew install fd
 brew cask install brave-browser
 brew cask install caskroom/versions/firefox-developer-edition
 brew cask install google-chrome
+brew cask install chromium
 
 # dev tools
 brew cask install webstorm
@@ -82,6 +83,9 @@ brew cask install spotify
 
 # aws
 pip3 install awscli --upgrade --user
+
+# communicator
+brew cask install telegram
 
 # space-vim
 curl -sLf https://spacevim.org/install.sh | bash
