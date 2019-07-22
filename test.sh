@@ -6,9 +6,8 @@ zsh --version &&\
 node --version &&\
 npm --version &&\
 yarn --version &&\
-nvm --version &&\
 pip --version &&\
 virtualenv --version &&\
 ipython --version &&\
-docker --version &&\
+ocker --version &&\
 docker-compose --version

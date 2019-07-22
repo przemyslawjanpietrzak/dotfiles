@@ -37,9 +37,14 @@ brew install tig
 
 # zsh
 brew install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s $(which zsh)
-echo 'zsh' >> .bash_profile
+ech "$IS_CI"
+echo "$IS_CI" -ne "true"
+if [ "$IS_CI" -ne "true" ]
+then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y
+  chsh -s $(which zsh)
+  echo 'zsh' >> .bash_profile
+fi
 
 # node
 brew install node
