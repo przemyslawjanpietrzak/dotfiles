@@ -1,0 +1,18 @@
+{
+  "name": "cerebro-plugins",
+  "dependencies": {
+    "cerebro-converter": "1.0.9",
+    "cerebro-files-nav": "1.0.4",
+    "cerebro-gif": "^0.2.2",
+    "cerebro-google": "1.0.1",
+    "cerebro-hash": "^1.0.3",
+    "cerebro-kill": "^0.1.1",
+    "cerebro-lipsum": "^1.0.1",
+    "cerebro-mac-apps": "1.0.2",
+    "cerebro-math": "1.0.0",
+    "cerebro-mdn": "^1.2.1",
+    "cerebro-npm": "^0.2.2",
+    "cerebro-open-web": "1.0.0",
+    "cerebro-stackoverflow": "^0.5.2"
+  }
+}
