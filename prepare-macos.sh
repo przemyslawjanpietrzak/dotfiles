@@ -74,6 +74,8 @@ git clone https://github.com/przemyslawjanpietrzak/dotfiles
 cd dotfiles
 mkdir -p ~/.vscode
 cp vscode/settings.json ~/.vscode/settings.json
+
+cat .aliases/.aliases >> ~/.zshrc
 cd ..
 cd ..
 

@@ -7,7 +7,6 @@ node --version &&\
 npm --version &&\
 yarn --version &&\
 pip --version &&\
-virtualenv --version &&\
 ipython --version &&\
 ocker --version &&\
 docker-compose --version
