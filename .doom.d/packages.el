@@ -1,13 +1,13 @@
 ;; -*- no-byte-compile: t; -*-
-;;; ~/.doom.d/packages.el
+;; ~/.doom.d/packages.el
 
-;;; Examples:
-;; (package! some-package)
-;; (package! another-package :recipe (:fetcher github :repo "username/repo"))
-;; (package! builtin-package :disable t)
 (package! tide)
 (package! web-mode)
 (package! flycheck)
 (package! company-tern)
 (package! doom-themes)
 (package! all-the-icons)
+(package! treemacs-icons-dired)
+(package! theme-magic)
+(package! fix-word)
+(package! lsp-treemacs)

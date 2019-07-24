@@ -1,10 +1,7 @@
 ;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
-
 ;; default  term
 (setq explicit-shell-file-name "/bin/zsh")
 ;; (load! "bindings")
-
-;; Place your private configuration here
 
 (def-package! org-super-agenda
   :after org-super-agenda
@@ -25,17 +22,15 @@
   :config
   (org-super-agenda-mode))
 
-
+;; TS
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
   (flycheck-mode +1)
   (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (flycheck-add-next-checker 'typescript-tide '(t . typescript-tslint) 'append)
   (eldoc-mode +1)
   (tide-hl-identifier-mode +1)
-  ;; company is an optional dependency. You have to
-  ;; install it separately via package-install
-  ;; `M-x package-install [ret] company`
   (company-mode +1))
 
 ;; aligns annotation to the right hand side
@@ -50,13 +45,30 @@
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
 (add-hook 'web-mode-hook
           (lambda ()
-(when (string-equal "tsx" (file-name-extension buffer-file-name))
+            (when (string-equal "tsx" (file-name-extension buffer-file-name))
               (setup-tide-mode))))
 
-;; (setq doom-font (font-spec :size 16))
-;; (setq doom-font (font-spec :family "Iosevka Term Custom Medium" :size 24))
+(use-package tide
+  :ensure t
+  :after (typescript-mode company flycheck)
+  :hook ((typescript-mode . tide-setup)
+         (typescript-mode . tide-hl-identifier-mode)
+         (before-save . tide-format-before-save)))
 
-(require 'all-the-icons)
+;; end TS
+
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+
+;; formats the buffer before saving
+(add-hook 'before-save-hook 'tide-format-before-save)
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
+(add-hook 'web-mode-hook
+          (lambda ()
+(when (string-equal "tsx" (file-name-extension buffer-file-name))
+              (setup-tide-mode))))
 
 ;; FROM https://github.com/Brettm12345/doom-emacs-literate-config/blob/master/config.org#uidoom
 (setq display-line-numbers-type 'relative)
@@ -78,11 +90,6 @@
 (setq doom-font (font-spec :family "Fira Code" :size 14))
 
 ;; company
-;; Setup company-perscient
-(def-package! company-prescient
-  :after company
-  :hook (company-mode . company-prescient-mode))
-
 ;; Setup company ui
 (after! company
   (setq company-tooltip-limit 5
@@ -91,3 +98,13 @@
         company-backends
         '(company-capf company-dabbrev company-files company-yasnippet)
         company-global-modes '(not comint-mode erc-mode message-mode help-mode gud-mode)))
+
+;; tree
+(after! doom-themes
+  (setq doom-neotree-file-icons t))
+
+(after! neotree
+  (setq neo-smart-open t))
+
+;; theme
+(load-theme 'doom-city-lights t)
