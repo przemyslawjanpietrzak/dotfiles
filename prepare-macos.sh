@@ -5,7 +5,7 @@
 brew install just
 brew install bat
 brew install wget
-brew install midnight-commander
+brew install ranger
 brew install htop
 brew install httpie
 brew install googler
@@ -37,8 +37,6 @@ brew install tig
 
 # zsh
 brew install zsh
-ech "$IS_CI"
-echo "$IS_CI" -ne "true"
 if [ "$IS_CI" -ne "true" ]
 then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y
