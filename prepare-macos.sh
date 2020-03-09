@@ -26,6 +26,7 @@ brew cask install iterm2
 brew cask install slack
 brew cask install keepassx
 brew cask install flux
+brew cask install tap
 
 # window managers
 brew cask install amethyst
