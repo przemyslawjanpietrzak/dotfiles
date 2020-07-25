@@ -11,6 +11,7 @@ brew install httpie
 brew install googler
 brew install jq
 brew install tldr
+brew install lazygit
 brew install fd
 
 # browsers
