@@ -72,10 +72,6 @@ pip3 install black
 # stuff
 mkdir code
 mkdir stuff
-git clone https://github.com/powerline/fonts
-cd fonts
-./install.sh
-cd ..
 git clone https://github.com/wesbos/Cobalt2-iterm.git
 git clone https://github.com/przemyslawjanpietrzak/dotfiles
 cd dotfiles
@@ -84,6 +80,14 @@ cp vscode/settings.json ~/.vscode/settings.json
 
 cat .aliases/.aliases >> ~/.zshrc
 cd ..
+cd ..
+
+# fonts
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+git clone https://github.com/powerline/fonts
+cd fonts
+./install.sh
 cd ..
 
 # ssh
