@@ -11,7 +11,6 @@ brew install httpie
 brew install googler
 brew install jq
 brew install tldr
-brew install lazygit
 brew install fd
 
 # browsers
@@ -28,6 +27,8 @@ brew cask install slack
 brew cask install keepassx
 brew cask install flux
 brew cask install tap
+brew install macvim
+brew install kap
 
 # window managers
 brew cask install amethyst
@@ -35,7 +36,7 @@ brew cask install amethyst
 # git
 brew install git
 brew install git-flow
-brew install tig
+brew install lazygit
 
 # zsh
 brew install zsh
