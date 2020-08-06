@@ -12,6 +12,7 @@ brew install googler
 brew install jq
 brew install tldr
 brew install fd
+brew install exa
 
 # browsers
 brew cask install brave-browser
