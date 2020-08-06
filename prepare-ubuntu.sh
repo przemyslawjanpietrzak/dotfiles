@@ -17,6 +17,8 @@ sudo apt install xclip -y
 # git
 sudo apt install git -y
 sudo apt-get install git-flow -y
+git config --global user.name "Przemyslaw Jan Beigert"
+git config --global user.email "przemyslaw.jan.beigert@gmail.com"
 
 sudo add-apt-repository ppa:lazygit-team/daily -y
 sudo apt-get update
