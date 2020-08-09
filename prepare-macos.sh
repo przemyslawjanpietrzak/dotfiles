@@ -40,6 +40,7 @@ brew install git-flow
 brew install lazygit
 git config --global user.name "Przemyslaw Jan Beigert"
 git config --global user.email "przemyslaw.jan.beigert@gmail.com"
+git config --global push.default current
 
 # zsh
 brew install zsh
