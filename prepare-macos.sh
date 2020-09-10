@@ -38,6 +38,7 @@ brew cask install amethyst
 brew install git
 brew install git-flow
 brew install lazygit
+brew install gh
 git config --global user.name "Przemyslaw Jan Beigert"
 git config --global user.email "przemyslaw.jan.beigert@gmail.com"
 git config --global push.default current
