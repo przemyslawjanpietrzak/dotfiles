@@ -13,6 +13,7 @@ brew install jq
 brew install tldr
 brew install fd
 brew install exa
+brew install hstr
 
 # browsers
 brew cask install brave-browser
