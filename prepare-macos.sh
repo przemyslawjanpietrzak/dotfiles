@@ -14,6 +14,8 @@ brew install tldr
 brew install fd
 brew install exa
 brew install hstr
+brew install dust
+brew install sd
 
 # browsers
 brew cask install brave-browser
