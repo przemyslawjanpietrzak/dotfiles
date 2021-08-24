@@ -58,10 +58,8 @@ fi
 # node
 brew install node
 brew install yarn
-brew install nvm
-echo "# NVM" >> .zshrc
-echo "export NVM_DIR=~/.nvm" >> .zshrc
-echo "source \$(brew --prefix nvm)/nvm.sh" >> .zshrc
+brew install fvm
+echo "eval '$(fnm env)'" >> .zshrc
 
 # python
 sudo easy_install pip
