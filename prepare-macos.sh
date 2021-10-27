@@ -17,6 +17,7 @@ brew install exa
 brew install hstr
 brew install dust
 brew install sd
+brew install git-delta
 
 # browsers
 brew install brave-browser
@@ -88,7 +89,7 @@ git clone https://github.com/przemyslawjanpietrzak/dotfiles
 cd dotfiles
 mkdir -p ~/.vscode
 cp vscode/settings.json ~/.vscode/settings.json
-cd ~
+cd ..
 
 # fonts
 brew tap homebrew/cask-fonts
@@ -97,6 +98,12 @@ git clone https://github.com/powerline/fonts
 cd fonts
 ./install.sh
 cd ..
+
+#prettyping
+curl -O https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping
+chmod +x prettyping
+./prettyping whatever.host.you.want.to.ping
+cd ~
 
 # ssh
 brew install tunnelblick
