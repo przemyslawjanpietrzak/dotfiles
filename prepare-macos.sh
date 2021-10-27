@@ -102,7 +102,6 @@ cd ..
 #prettyping
 curl -O https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping
 chmod +x prettyping
-./prettyping whatever.host.you.want.to.ping
 cd ~
 
 # ssh
@@ -121,4 +120,5 @@ pip3 install awscli --upgrade --user
 brew install telegram
 
 # space-vim
+brew install nvim
 curl -sLf https://spacevim.org/install.sh | bash
