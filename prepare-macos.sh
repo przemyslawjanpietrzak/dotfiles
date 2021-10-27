@@ -1,3 +1,4 @@
+cd ~
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -18,24 +19,24 @@ brew install dust
 brew install sd
 
 # browsers
-brew cask install brave-browser
-brew cask install caskroom/versions/firefox-developer-edition
-brew cask install google-chrome
-brew cask install chromium
+brew install brave-browser
+brew install caskroom/versions/firefox-developer-edition
+brew install google-chrome
+brew install chromium
 
 # dev tools
-brew cask install webstorm
-brew cask install visual-studio-code
-brew cask install iterm2
-brew cask install slack
-brew cask install keepassx
-brew cask install flux
-brew cask install tap
+brew install webstorm
+brew install visual-studio-code
+brew install iterm2
+brew install slack
+brew install keepassx
+brew install flux
+brew install tap
 brew install macvim
 brew install kap
 
 # window managers
-brew cask install amethyst
+brew install amethyst
 
 # git
 brew install git
@@ -45,6 +46,9 @@ brew install gh
 git config --global user.name "Przemyslaw Jan Beigert"
 git config --global user.email "przemyslaw.jan.beigert@gmail.com"
 git config --global push.default current
+git config --global core.pager delta
+git config --global core.pager "delta --dark"
+git config --global core.pager "delta --line-numbers --dark"
 
 # zsh
 brew install zsh
@@ -84,33 +88,30 @@ git clone https://github.com/przemyslawjanpietrzak/dotfiles
 cd dotfiles
 mkdir -p ~/.vscode
 cp vscode/settings.json ~/.vscode/settings.json
-
-cat .aliases/.aliases >> ~/.zshrc
-cd ..
-cd ..
+cd ~
 
 # fonts
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install font-fira-code
 git clone https://github.com/powerline/fonts
 cd fonts
 ./install.sh
 cd ..
 
 # ssh
-brew cask install tunnelblick
+brew install tunnelblick
 brew install openssh
 
 # media
-brew cask install vlc
+brew install vlc
 brew install transmission
-brew cask install spotify
+brew install spotify
 
 # aws
 pip3 install awscli --upgrade --user
 
 # communicator
-brew cask install telegram
+brew install telegram
 
 # space-vim
 curl -sLf https://spacevim.org/install.sh | bash
