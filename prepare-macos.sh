@@ -17,6 +17,7 @@ brew install exa
 brew install hstr
 brew install dust
 brew install sd
+brew install wd
 brew install git-delta
 
 # browsers
