@@ -22,7 +22,7 @@ brew install git-delta
 
 # browsers
 brew install brave-browser
-brew install caskroom/versions/firefox-developer-edition
+brew install firefox
 brew install google-chrome
 brew install chromium
 
