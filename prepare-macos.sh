@@ -119,6 +119,7 @@ pip3 install awscli --upgrade --user
 
 # communicator
 brew install telegram
+brew install --cask whatsapp
 
 # space-vim
 brew install nvim
