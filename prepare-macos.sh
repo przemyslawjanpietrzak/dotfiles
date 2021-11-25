@@ -32,7 +32,7 @@ brew install visual-studio-code
 brew install iterm2
 brew install slack
 brew install keepassx
-brew install flux
+brew install --cask flux
 brew install tap
 brew install macvim
 brew install kap
