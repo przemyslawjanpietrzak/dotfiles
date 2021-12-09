@@ -86,6 +86,7 @@ pip3 install black
 mkdir code
 mkdir stuff
 git clone https://github.com/wesbos/Cobalt2-iterm.git
+git clone https://github.com/wesbos/Cobalt2-Alfred-Theme
 git clone https://github.com/przemyslawjanpietrzak/dotfiles
 cd dotfiles
 mkdir -p ~/.vscode
