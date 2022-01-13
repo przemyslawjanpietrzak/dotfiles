@@ -18,6 +18,7 @@ brew install hstr
 brew install dust
 brew install sd
 brew install wd
+brew install procs
 brew install git-delta
 
 # browsers
@@ -64,7 +65,7 @@ fi
 # node
 brew install node
 brew install yarn
-brew install fvm
+brew install fnm
 echo "eval '$(fnm env)'" >> .zshrc
 
 # python
