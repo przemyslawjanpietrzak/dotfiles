@@ -11,6 +11,7 @@ brew install htop
 brew install httpie
 brew install googler
 brew install jq
+brew install jless
 brew install tldr
 brew install fd
 brew install exa
@@ -55,12 +56,7 @@ git config --global core.pager "delta --line-numbers --dark"
 
 # zsh
 brew install zsh
-if [ "$IS_CI" -ne "true" ]
-then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y
-  chsh -s $(which zsh)
-  echo 'zsh' >> .bash_profile
-fi
+brew install antigen
 
 # node
 brew install node
@@ -102,7 +98,7 @@ cd fonts
 ./install.sh
 cd ..
 
-#prettyping
+# prettyping
 curl -O https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping
 chmod +x prettyping
 cd ~
@@ -123,6 +119,5 @@ pip3 install awscli --upgrade --user
 brew install telegram
 brew install --cask whatsapp
 
-# space-vim
+# vim
 brew install nvim
-curl -sLf https://spacevim.org/install.sh | bash
