@@ -3,24 +3,25 @@ cd ~
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # cli tools
-brew install just
 brew install bat
-brew install wget
-brew install ranger
+brew install dust
+brew install exa
+brew install fd
+brew install git-delta
+brew install googler
+brew install hstr
 brew install htop
 brew install httpie
-brew install googler
-brew install jq
 brew install jless
-brew install tldr
-brew install fd
-brew install exa
-brew install hstr
-brew install dust
-brew install sd
-brew install wd
+brew install jq
+brew install just
 brew install procs
-brew install git-delta
+brew install ranger
+brew install ripgrep
+brew install sd
+brew install tldr
+brew install wd
+brew install wget
 
 # browsers
 brew install brave-browser
@@ -35,7 +36,6 @@ brew install iterm2
 brew install slack
 brew install keepassx
 brew install --cask flux
-brew install tap
 brew install macvim
 brew install kap
 
