@@ -21,6 +21,7 @@ brew install ripgrep
 brew install sd
 brew install tldr
 brew install wd
+brew install fzf
 brew install wget
 
 # browsers
