@@ -5,24 +5,23 @@ cd ~
 # cli tools
 brew install bat
 brew install dust
-brew install exa
+brew install lsd
 brew install fd
 brew install git-delta
 brew install googler
-brew install hstr
 brew install htop
 brew install httpie
-brew install jless
 brew install jq
+brew install joshuto
 brew install just
 brew install procs
-brew install ranger
 brew install ripgrep
 brew install sd
 brew install tldr
 brew install wd
 brew install fzf
 brew install wget
+brew install z
 
 # browsers
 brew install brave-browser
@@ -32,13 +31,12 @@ brew install chromium
 
 # dev tools
 brew install webstorm
-brew install visual-studio-code
-brew install iterm2
+brew install --cask vscodium
+brew install --cask alacritty
 brew install slack
 brew install keepassx
 brew install --cask flux
-brew install macvim
-brew install kap
+brew install --cask obsidian
 
 # window managers
 brew install amethyst
@@ -48,6 +46,7 @@ brew install git
 brew install git-flow
 brew install lazygit
 brew install gh
+
 git config --global user.name "Przemyslaw Jan Beigert"
 git config --global user.email "przemyslaw.jan.beigert@gmail.com"
 git config --global push.default current
@@ -63,6 +62,7 @@ brew install antigen
 brew install node
 brew install yarn
 brew install fnm
+brew install pnpm
 echo "eval '$(fnm env)'" >> .zshrc
 
 # python
@@ -82,27 +82,20 @@ pip3 install black
 
 # stuff
 mkdir code
+mkdir code/open-source
 mkdir stuff
-git clone https://github.com/wesbos/Cobalt2-iterm.git
-git clone https://github.com/wesbos/Cobalt2-Alfred-Theme
-git clone https://github.com/przemyslawjanpietrzak/dotfiles
-cd dotfiles
-mkdir -p ~/.vscode
-cp vscode/settings.json ~/.vscode/settings.json
-cd ..
+git clone https://github.com/denilsonsa/prettyping $HOME/stuff
+git clone https://github.com/przemyslawjanpietrzak/dotfiles $HOME/code/open-source
+curl -L git.io/antigen > $HOME/stuff/antigen.zsh
+
+
+# load configs
+cp $HOME/code/open-source/alacritty.toml $HOME/.config/alacritty/
+cp $HOME/code/open-source/tmux.conf $HOME/.config/tmux/
+cp $HOME/code/open-source/.zshrc $HOME/
 
 # fonts
-brew tap homebrew/cask-fonts
-brew install font-fira-code
-git clone https://github.com/powerline/fonts
-cd fonts
-./install.sh
-cd ..
-
-# prettyping
-curl -O https://raw.githubusercontent.com/denilsonsa/prettyping/master/prettyping
-chmod +x prettyping
-cd ~
+brew install font-hack-nerd-font
 
 # ssh
 brew install tunnelblick
@@ -117,8 +110,13 @@ brew install spotify
 pip3 install awscli --upgrade --user
 
 # communicator
-brew install telegram
+brew install --cask signal
 brew install --cask whatsapp
 
 # vim
 brew install nvim
+LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
+
+source $HOME/.zshrc
+
+

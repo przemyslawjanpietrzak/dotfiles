@@ -1,0 +1,8 @@
+import = [
+    "~/.config/alacritty/themes/themes/nord.toml"
+]
+
+[font]
+size= 14
+normal.family="Hack Nerd Font Mono"
+
