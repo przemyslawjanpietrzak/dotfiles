@@ -35,8 +35,14 @@ brew install --cask vscodium
 brew install --cask alacritty
 brew install slack
 brew install keepassx
-brew install --cask flux
 brew install --cask obsidian
+
+# other tools
+brew install --cask alt-tab
+brew install --cask raycast
+brew install --cask shottr
+brew install --cask aldente
+brew install --cask flux
 
 # window managers
 brew install amethyst
@@ -87,7 +93,6 @@ mkdir stuff
 git clone https://github.com/denilsonsa/prettyping $HOME/stuff
 git clone https://github.com/przemyslawjanpietrzak/dotfiles $HOME/code/open-source
 curl -L git.io/antigen > $HOME/stuff/antigen.zsh
-
 
 # load configs
 cp $HOME/code/open-source/alacritty.toml $HOME/.config/alacritty/
