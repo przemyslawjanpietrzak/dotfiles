@@ -36,6 +36,7 @@ brew install --cask alacritty
 brew install slack
 brew install keepassx
 brew install --cask obsidian
+brew cask install docker
 
 # other tools
 brew install --cask alt-tab
