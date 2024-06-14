@@ -78,5 +78,4 @@ alias pn="pnpm"
 alias lg="lazygit"
 
 alias pping="~/stuff/prettyping/prettyping"
-alias jless="~/stuff/jless"
 alias ngrock="~/stuff/ngrock"
