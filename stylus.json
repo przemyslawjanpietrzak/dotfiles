@@ -1,0 +1,150 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "newStyleAsUsercss": false,
+      "styleViaASS": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "urlInstaller": true,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1664271430274,
+    "name": "facebook blocker",
+    "sections": [
+      {
+        "code": "[aria-label=\"Relacje\"] {\n    display: none !important;\n}\n[aria-label=\"Watch, 18 powiadomień\"] {\n        display: none !important;\n}\n\n\n[aria-label=\"Reklamodawca\"] {\n     display: none !important;\n}\n[aria-label=\"Facebook\"][role=\"contentinfo\"] {\n    display: none !important;\n}\n\n#ssrb_composer_end+div{\n    display: none !important; \n}\n\n[aria-label=\"Watch, 8 powiadomień\"] {\n        display: none !important; \n}\n\n[src=\"https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-1/351338634_793657715757488_7580912187560899769_n.jpg?stp=dst-jpg_p100x100&_nc_cat=100&ccb=1-7&_nc_sid=fe8171&_nc_ohc=mbsZZQCBE0IAX98F2kV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-waw1-1.xx&oh=00_AfAwc9dqdTqGSQQFhh97OodJ6r0cF3BZKknFF4GcOQcQzA&oe=65035E45\"] {\n        display: none !important; \n}\n[src=\"https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-1/351338634_793657715757488_7580912187560899769_n.jpg?stp=dst-jpg_p100x100&_nc_cat=100&ccb=1-7&_nc_sid=fe8171&_nc_ohc=mbsZZQCBE0IAX98F2kV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-waw1-1.xx&oh=00_AfAwc9dqdTqGSQQFhh97OodJ6r0cF3BZKknFF4GcOQcQzA&oe=65035E45\"] + div{\n        display: none !important; \n}\n\n[src=\"https://scontent.xx.fbcdn.net/v/t39.30808-1/351338634_793657715757488_7580912187560899769_n.jpg?stp=dst-jpg_p100x100&_nc_cat=100&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=mbsZZQCBE0IAX_WgmkT&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBPqRdHYGGxrAKjeytkj_RhjhPkQguRTITBr9XyNwCN0w&oe=65035E45\"] {\n            display: none !important; \n\n}"
+      }
+    ],
+    "updateDate": 1694432367903,
+    "_id": "6db514dd-2418-4fd6-abee-047576311533",
+    "_rev": 1694432367903,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1664273473506,
+    "name": "twitter block",
+    "sections": [
+      {
+        "code": " [aria-label=\"Timeline: Trending now\"] {\n    display: none !important;\n}\n\n[aria-label=\"Who to follow\"] {\n        display: none !important;\n}\n[aria-label=\"Get Verified\"] {\n    display: none !important;\n}\n[aria-label=\"Footer\"] {\n    display: none !important;\n}\n"
+      }
+    ],
+    "updateDate": 1691046419119,
+    "_id": "e8493354-1cf8-440c-b53b-30e56f4af848",
+    "_rev": 1691046419119,
+    "id": 2
+  },
+  {
+    "enabled": true,
+    "installDate": 1682424507744,
+    "name": "linkedin blocker",
+    "sections": [
+      {
+        "code": ".feed-follows-module, [aria-label=\"LinkedIn Footer Content\"], .premium-upsell-link {\n    display: none !important;\n}\n\n.notification-badge.notification-badge--show, .msg-overlay-bubble-header__unread-count {\n    background-color: gray !important;\n}"
+      }
+    ],
+    "updateDate": 1708002651474,
+    "_id": "80e19e75-7310-4ab7-b2c7-d87916b1d9df",
+    "_rev": 1708002651474,
+    "id": 3,
+    "inclusions": [
+      "https://www.linkedin.com/feed/*"
+    ]
+  }
+]
