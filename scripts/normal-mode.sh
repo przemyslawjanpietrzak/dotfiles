@@ -9,8 +9,8 @@
 # @raycast.icon 🤖
 # @raycast.packageName normal-mode
 
-pkill "Webstorm" &\
-pkill "KeePassXC" &\
-pkill "Slack" &\
-pkill "Alacritty"
+pkill webstorm
+pkill KeePassXC
+pkill Slack
+pkill alacritty
 
