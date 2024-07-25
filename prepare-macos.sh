@@ -63,7 +63,8 @@ git config --global core.pager "delta --line-numbers --dark"
 
 # zsh
 brew install zsh
-brew install antigen
+# brew install antigen
+brew install antidote
 
 # node
 brew install node
