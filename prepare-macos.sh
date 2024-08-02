@@ -5,22 +5,22 @@ cd ~
 # cli tools
 brew install bat
 brew install dust
-brew install lsd
 brew install fd
+brew install fzf
 brew install git-delta
 brew install googler
 brew install htop
 brew install httpie
 brew install jq
-brew install joshuto
 brew install just
+brew install lsd
 brew install procs
 brew install ripgrep
 brew install sd
 brew install tldr
 brew install wd
-brew install fzf
 brew install wget
+brew install yazi
 brew install z
 
 # browsers
@@ -58,20 +58,20 @@ git config --global user.name "Przemyslaw Jan Beigert"
 git config --global user.email "przemyslaw.jan.beigert@gmail.com"
 git config --global push.default current
 git config --global core.pager delta
-git config --global core.pager "delta --dark"
-git config --global core.pager "delta --line-numbers --dark"
+git config --global core.pager "delta --line-numbers --dark --side-by-side"
 
 # zsh
 brew install zsh
-# brew install antigen
 brew install antidote
 
 # node
 brew install node
 brew install yarn
-brew install fnm
 brew install pnpm
+brew install fnm
 echo "eval '$(fnm env)'" >> .zshrc
+brew tap oven-sh/bun
+brew install bun
 
 # python
 sudo easy_install pip
@@ -95,11 +95,6 @@ mkdir stuff
 git clone https://github.com/denilsonsa/prettyping $HOME/stuff
 git clone https://github.com/przemyslawjanpietrzak/dotfiles $HOME/code/open-source
 curl -L git.io/antigen > $HOME/stuff/antigen.zsh
-
-# load configs
-cp $HOME/code/open-source/alacritty.toml $HOME/.config/alacritty/
-cp $HOME/code/open-source/tmux.conf $HOME/.config/tmux/
-cp $HOME/code/open-source/.zshrc $HOME/
 
 # fonts
 brew install font-hack-nerd-font
@@ -126,4 +121,10 @@ LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 
 source $HOME/.zshrc
 
-
+# load configs
+cp $HOME/code/open-source/alacritty.toml $HOME/.config/alacritty/
+cp $HOME/code/open-source/tmux.conf $HOME/.config/tmux/
+cp $HOME/code/open-source/.zshrc $HOME/
+cp $HOME/code/open-source/amethyst $HOME/.config/amethyst
+cp $HOME/code/open-source/ohmyposh $HOME/.config/ohmyposh
+cp $HOME/code/open-source/lvim $HOME/.config/lvim
