@@ -12,7 +12,7 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/p10k.toml)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/p10k-nord.toml)"
 
 # fnm
 export PATH="/Users/przemyslawbeigert/Library/Caches/fnm_multishells/43771_1661839090515/bin":$PATH

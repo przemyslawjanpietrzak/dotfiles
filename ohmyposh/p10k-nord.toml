@@ -1,0 +1,135 @@
+version = 2
+final_space = true
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+
+# nord vars
+polar_nigth1 = "#2e3440"
+polar_nigth2 = "#3b4252"
+polar_nigth3 = "#434c5e"
+polar_nigth4 = "#4c566a"
+
+snow_storm1 = "#d8dee9"
+snow_storm2 = "#e5e9f0"
+snow_storm3 = "#eceff4"
+
+frost1 = "#8fbcbb"
+frost2 = "#88c0d0"
+frost3 = "#81a1c1"
+frost4 = "#5e81ac"
+
+aurora_red = "#bf616a"
+aurora_orange = "#d08770"
+aurora_yellow = "#ebcb8b"
+aurora_green = "#a3be8c"
+aurora_pink = "#b48ead"
+
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+
+[[blocks.segments]]
+type = 'os'
+style = 'diamond'
+foreground = '#000000'
+background = '#d3d7cf'
+template = ' {{ if .WSL }}WSL at {{ end }}{{.Icon}} '
+
+[[blocks.segments]]
+type = 'path'
+style = 'powerline'
+powerline_symbol = ''
+foreground = '#e4e4e4'
+background = "#4c566a"
+
+template = '  {{ .Path }} '
+
+[blocks.segments.properties]
+home_icon = '~'
+style = 'full'
+
+[[blocks.segments]]
+type = 'git'
+style = 'powerline'
+powerline_symbol = ''
+foreground = '#000000'
+background = "#88c0d0"
+background_templates = [
+    '{{ if or (.Working.Changed) (.Staging.Changed) }}#ebcb8b{{ end }}',
+    '{{ if and (gt .Ahead 0) (gt .Behind 0) }}#d08770{{ end }}',
+    '{{ if gt .Ahead 0 }}#f26d50{{ end }}',
+    '{{ if gt .Behind 0 }}#4e9a06{{ end }}',
+]
+template = ' {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} '
+
+[blocks.segments.properties]
+branch_icon = ' '
+fetch_stash_count = true
+fetch_status = true
+fetch_upstream_icon = true
+
+[[blocks]]
+type = 'rprompt'
+alignment = 'right'
+
+[[blocks.segments]]
+type = 'node'
+style = 'powerline'
+powerline_symbol = ''
+invert_powerline = true
+foreground = '#ffffff'
+background = '#a3be8c'
+template = ' {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}  '
+
+[blocks.segments.properties]
+fetch_version = true
+
+[[blocks.segments]]
+type = 'python'
+style = 'powerline'
+powerline_symbol = ''
+invert_powerline = true
+foreground = '#111111'
+background = '#FFDE57'
+template = ' {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}  '
+
+[blocks.segments.properties]
+display_default = false
+
+[[blocks.segments]]
+type = 'root'
+style = 'powerline'
+powerline_symbol = ''
+invert_powerline = true
+foreground = '#111111'
+background = '#ffff66'
+template = '  '
+
+[[blocks.segments]]
+type = 'executiontime'
+style = 'powerline'
+powerline_symbol = ''
+invert_powerline = true
+foreground = '#000000'
+background = '#ebcb8b'
+template = ' {{ .FormattedMs }}  '
+
+[[blocks.segments]]
+type = 'status'
+style = 'powerline'
+powerline_symbol = ''
+invert_powerline = true
+foreground = '#d3d7cf'
+background = '#000000'
+background_templates = ['{{ if gt .Code 0 }}#bf616a{{ end }}']
+template = ' {{ if gt .Code 0 }}{{ reason .Code }}{{ else }}{{ end }} '
+
+[blocks.segments.properties]
+always_enabled = true
+
+[[blocks.segments]]
+type = 'time'
+style = 'diamond'
+invert_powerline = true
+foreground = '#000000'
+background = '#eceff4'
+template = ' {{ .CurrentDate | date .Format }}  '
