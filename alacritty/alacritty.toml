@@ -6,3 +6,7 @@ import = [
 size= 14
 normal.family="Hack Nerd Font Mono"
 
+[colors.primary] 
+background = "#2e3440"
+
+
