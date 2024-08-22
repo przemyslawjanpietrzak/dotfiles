@@ -5,6 +5,7 @@ cd ~
 # cli tools
 brew install bat
 brew install dust
+brew install entr
 brew install fd
 brew install fzf
 brew install git-delta
