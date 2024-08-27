@@ -1,7 +1,7 @@
 [
   {
     "settings": {
-      "openEditInWindow": false,
+      "openEditInWindow": true,
       "openEditInWindow.popup": false,
       "windowPosition": {},
       "show-badge": true,
@@ -76,6 +76,7 @@
       "editor.appliesToLineWidget": true,
       "editor.autosaveDraft": 10,
       "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
       "editor.targetsFirst": true,
       "editor.colorpicker": true,
       "editor.colorpicker.hexUppercase": false,
@@ -92,6 +93,7 @@
       "headerWidth.edit": 280,
       "headerWidth.install": 280,
       "headerWidth.manage": 280,
+      "popup.search.globals": false,
       "popupWidth": 246,
       "popupWidthMax": 280,
       "updateInterval": 24,
@@ -108,12 +110,12 @@
     "name": "facebook blocker",
     "sections": [
       {
-        "code": "[aria-label=\"Relacje\"] {\n    display: none !important;\n}\n[aria-label=\"Watch, 18 powiadomień\"] {\n        display: none !important;\n}\n\n\n[aria-label=\"Reklamodawca\"] {\n     display: none !important;\n}\n[aria-label=\"Facebook\"][role=\"contentinfo\"] {\n    display: none !important;\n}\n\n#ssrb_composer_end+div{\n    display: none !important; \n}\n\n[aria-label=\"Watch, 8 powiadomień\"] {\n        display: none !important; \n}\n\n[src=\"https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-1/351338634_793657715757488_7580912187560899769_n.jpg?stp=dst-jpg_p100x100&_nc_cat=100&ccb=1-7&_nc_sid=fe8171&_nc_ohc=mbsZZQCBE0IAX98F2kV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-waw1-1.xx&oh=00_AfAwc9dqdTqGSQQFhh97OodJ6r0cF3BZKknFF4GcOQcQzA&oe=65035E45\"] {\n        display: none !important; \n}\n[src=\"https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-1/351338634_793657715757488_7580912187560899769_n.jpg?stp=dst-jpg_p100x100&_nc_cat=100&ccb=1-7&_nc_sid=fe8171&_nc_ohc=mbsZZQCBE0IAX98F2kV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-waw1-1.xx&oh=00_AfAwc9dqdTqGSQQFhh97OodJ6r0cF3BZKknFF4GcOQcQzA&oe=65035E45\"] + div{\n        display: none !important; \n}\n\n[src=\"https://scontent.xx.fbcdn.net/v/t39.30808-1/351338634_793657715757488_7580912187560899769_n.jpg?stp=dst-jpg_p100x100&_nc_cat=100&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=mbsZZQCBE0IAX_WgmkT&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=00_AfBPqRdHYGGxrAKjeytkj_RhjhPkQguRTITBr9XyNwCN0w&oe=65035E45\"] {\n            display: none !important; \n\n}"
+        "code": "[aria-label=\"Relacje\"] {\n    display: none !important;\n}\n[aria-label=\"Watch, 18 powiadomień\"] {\n        display: none !important;\n}\n\n\n[aria-label=\"Reklamodawca\"] {\n     display: none !important;\n}\n[aria-label=\"Facebook\"][role=\"contentinfo\"] {\n    display: none !important;\n}\n\n#ssrb_composer_end+div{\n    display: none !important; \n}\n\n[aria-label=\"Watch, 8 powiadomień\"] {\n        display: none !important; \n}\n"
       }
     ],
-    "updateDate": 1694432367903,
+    "updateDate": 1724758424261,
     "_id": "6db514dd-2418-4fd6-abee-047576311533",
-    "_rev": 1694432367903,
+    "_rev": 1724758424261,
     "id": 1
   },
   {
@@ -146,5 +148,39 @@
     "inclusions": [
       "https://www.linkedin.com/feed/*"
     ]
+  },
+  {
+    "enabled": true,
+    "installDate": 1724757614801,
+    "name": "yt nord",
+    "sections": [
+      {
+        "code": ":root {\n    --nord0: #2e3440;\n    --nord1: #3b4252;\n    --nord2: #434c5e;\n    --nord3: #4c566a;\n    --nord4: #d8dee9;\n    --nord5: #e5e9f0;\n    --nord6: #eceff4;\n    --nord7: #8fbcbb;\n    --nord8: #88c0d0;\n    --nord9: #81a1c1;\n    --nord10: #5e81ac;\n    --nord11: #bf616a;\n    --nord12: #d08770;\n    --nord13: #ebcb8b;\n    --nord14: #a3be8c;\n    --nord15: #b48ead;\n    --nord3-4: #929AAA;\n\n}\n\nytd-masthead#masthead{\n    background: var(--nord0) !important\n}\n\n\nytd-mini-guide-renderer, ytd-mini-guide-entry-renderer, #header, #guide-inner-content {\n    background: var(--nord0) !important\n}\n\n#yt-logo-updated_yt1 path:first-child {\n    fill: var(--nord10) !important;\n}\n\n#logo-icon path:first-child {\n    fill: var(--nord10) !important;\n}",
+        "urlPrefixes": [
+          "https://www.youtube.com/"
+        ]
+      }
+    ],
+    "updateDate": 1724758957744,
+    "_id": "7364281c-e763-401f-8b74-8bd55f44bed4",
+    "_rev": 1724758957744,
+    "id": 5
+  },
+  {
+    "enabled": true,
+    "installDate": 1724758890578,
+    "name": "gh nord",
+    "sections": [
+      {
+        "code": ":root {\n    --nord0: #2e3440;\n    --nord1: #3b4252;\n    --nord2: #434c5e;\n    --nord3: #4c566a;\n    --nord4: #d8dee9;\n    --nord5: #e5e9f0;\n    --nord6: #eceff4;\n    --nord7: #8fbcbb;\n    --nord8: #88c0d0;\n    --nord9: #81a1c1;\n    --nord10: #5e81ac;\n    --nord11: #bf616a;\n    --nord12: #d08770;\n    --nord13: #ebcb8b;\n    --nord14: #a3be8c;\n    --nord15: #b48ead;\n    --nord3-4: #929AAA;\n\n    --color-bg-canvas: var(--nord0) !important;\n    \n    --fgColor-accent: var(--nord10) !important;\n    --fgColor-open: var(--nord10) !important;\n    --fgColor-closed: var(--nord11) !important;\n    --fgColor-done: var(--nord15) !important;\n    \n    --button-primary-bgColor-rest: var(--nord10) !important;\n    --button-primary-bgColor-hover: var(--nord11) !important;\n\n}\n\n    \n.feed-left-sidebar, .AppHeader-globalBar {\n      background-color: var(--color-bg-canvas) !important;\n    border-bottom: 1px solid rgba(68, 76, 86, 0.7);\n}\n    \n    .feed-item-content {\n        background-color: var(--color-bg-canvas) !important;\n       \n    }\n    \n    .AppHeader-localBar {\n        background-color: var(--nord0) !important;\n    }\n    \n    .pinned-item-list-item > .Box {\n        background-color: var(--nord0) !important;\n    }\n    \n    #repos-file-tree {\n                background-color: var(--nord0) !important;\n    }\n    \n    .dashboard-changelog {\n            background-color: var(--nord0) !important;\n    }\n    \n    [aria-label=\"Explore repositories\"] {\n              background-color: var(--nord0) !important;\n    }\n    \n    [data-target=\"deferred-side-panel.panel\"] {\n         background-color: var(--nord0) !important;\n    }\n",
+        "urlPrefixes": [
+          "https://github.com"
+        ]
+      }
+    ],
+    "updateDate": 1724758929300,
+    "_id": "786dc8ce-c633-4b5b-b0cb-e5edad7f8781",
+    "_rev": 1724758929300,
+    "id": 6
   }
 ]
