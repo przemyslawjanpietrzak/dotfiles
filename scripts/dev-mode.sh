@@ -8,9 +8,12 @@
 # Optional parameters:
 # @raycast.icon 🤖
 # @raycast.packageName devMode
+#
 open -a "Webstorm" &\
 open -a "KeePassXC" &\
 open -a "Slack" &\
+open -a "Shottr" &\
+open -a "Obsidian" &\
 open -a "Brave Browser" &\
 open -a "Alacritty"
 

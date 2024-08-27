@@ -130,3 +130,13 @@ cp $HOME/code/open-source/.zshrc $HOME/
 cp $HOME/code/open-source/amethyst $HOME/.config/amethyst
 cp $HOME/code/open-source/ohmyposh $HOME/.config/ohmyposh
 cp $HOME/code/open-source/lvim $HOME/.config/lvim
+
+# macos defaults
+defaults write com.apple.dock "autohide" -bool "true"
+defaults write com.apple.dock "tilesize" -int "8" 
+defaults write com.apple.dock "expose-group-apps" -bool "true"
+killall Dock
+
+defaults write com.apple.screencapture "location" -string "~/Pictures/screenshots"
+killall SystemUIServer
+
