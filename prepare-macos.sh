@@ -123,13 +123,13 @@ LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 
 source $HOME/.zshrc
 
-# load configs
-cp $HOME/code/open-source/alacritty.toml $HOME/.config/alacritty/
-cp $HOME/code/open-source/tmux.conf $HOME/.config/tmux/
-cp $HOME/code/open-source/.zshrc $HOME/
-cp $HOME/code/open-source/amethyst $HOME/.config/amethyst
-cp $HOME/code/open-source/ohmyposh $HOME/.config/ohmyposh
-cp $HOME/code/open-source/lvim $HOME/.config/lvim
+# sync configs
+mkdir -p $HOME/.config/aerospace && ln -s $HOME/code/open-source/aerospace.toml $HOME/.config/aerospace/aerospace.toml 
+mkdir -p $HOME/.config/alacritty && ln -s $HOME/code/open-source/alacritty.toml $HOME/.config/alacritty/alacritty.toml 
+mkdir -p $HOME/.config/ohmyposh && ln -s $HOME/code/open-source/ohmyposh/p10k-nord.toml $HOME/.config/ohmyposh/p10k-nord.toml 
+mkdir -p $HOME/.config/lvim && ln -s $HOME/code/open-source/lvim/config.lua $HOME/.config/lvim/config.lua
+mkdir -p $HOME/.config/tmux && ln -s $HOME/code/open-source/tmux/tmux.conf $HOME/.config/tmux/tmux.conf
+mkdir -p $HOME/.config/yazi && ln -s $HOME/code/open-source/yazi/theme.toml $HOME/.config/yazi/theme.toml 
 
 # macos defaults
 defaults write com.apple.dock "autohide" -bool "true"
