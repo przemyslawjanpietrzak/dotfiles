@@ -1,0 +1,7 @@
+[user]
+	name = Przemyslaw Jan Beigert
+	email = przemyslaw.jan.beigert@gmail.com
+[push]
+	default = current
+[core]
+	pager = delta --line-numbers --dark --side-by-side

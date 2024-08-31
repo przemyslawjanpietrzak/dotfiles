@@ -34,11 +34,12 @@ brew install chromium
 # dev tools
 brew install webstorm
 brew install --cask vscodium
+brew install --cask zed
 brew install --cask alacritty
 brew install slack
 brew install keepassx
 brew install --cask obsidian
-brew cask install docker
+brew install docker
 
 # other tools
 brew install --cask alt-tab
@@ -56,11 +57,11 @@ brew install git-flow
 brew install lazygit
 brew install gh
 
-git config --global user.name "Przemyslaw Jan Beigert"
-git config --global user.email "przemyslaw.jan.beigert@gmail.com"
-git config --global push.default current
-git config --global core.pager delta
-git config --global core.pager "delta --line-numbers --dark --side-by-side"
+# git config --global user.name "Przemyslaw Jan Beigert"
+# git config --global user.email "przemyslaw.jan.beigert@gmail.com"
+# git config --global push.default current
+# git config --global core.pager delta
+# git config --global core.pager "delta --line-numbers --dark --side-by-side"
 
 # zsh
 brew install zsh
