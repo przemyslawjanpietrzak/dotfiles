@@ -15,6 +15,8 @@ brew install httpie
 brew install jq
 brew install just
 brew install lsd
+brew install ngrock
+brew install prettyping
 brew install procs
 brew install ripgrep
 brew install sd

@@ -55,18 +55,5 @@ alias vi="lvim"
 alias lvi="lvim"
 alias pn="pnpm"
 alias lg="lazygit"
+alias pping="prettyping"
 
-alias pping="~/stuff/prettyping/prettyping"
-alias jless="~/stuff/jless"
-alias ngrock="~/stuff/ngrock"
-
-eval 'export PATH="/Users/przemyslawbeigert/.local/state/fnm_multishells/19160_1717920008551/bin":$PATH
-export FNM_RESOLVE_ENGINES="false"
-export FNM_COREPACK_ENABLED="false"
-export FNM_DIR="/Users/przemyslawbeigert/Library/Application Support/fnm"
-export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
-export FNM_ARCH="arm64"
-export FNM_MULTISHELL_PATH="/Users/przemyslawbeigert/.local/state/fnm_multishells/19160_1717920008551"
-export FNM_VERSION_FILE_STRATEGY="local"
-export FNM_LOGLEVEL="info"
-rehash'
