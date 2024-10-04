@@ -5,3 +5,4 @@
 	default = current
 [core]
 	pager = delta --line-numbers --dark --side-by-side
+	excludesFile = '~/.gitignore'

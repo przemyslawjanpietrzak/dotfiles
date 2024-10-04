@@ -9,4 +9,5 @@ normal.family="Hack Nerd Font Mono"
 [colors.primary] 
 background = "#2e3440"
 
-
+[window]
+option_as_alt = "Both"
