@@ -121,19 +121,18 @@ LV_BRANCH='release-1.4/neovim-0.9' bash <(curl -s https://raw.githubusercontent.
 source $HOME/.zshrc
 
 # sync configs
-mkdir -p $HOME/.config/aerospace && ln -s $HOME/code/open-source/aerospace.toml $HOME/.config/aerospace/aerospace.toml 
-mkdir -p $HOME/.config/alacritty && ln -s $HOME/code/open-source/alacritty.toml $HOME/.config/alacritty/alacritty.toml 
-mkdir -p $HOME/.config/ohmyposh && ln -s $HOME/code/open-source/ohmyposh/p10k-nord.toml $HOME/.config/ohmyposh/p10k-nord.toml 
+mkdir -p $HOME/.config/aerospace && ln -s $HOME/code/open-source/aerospace.toml $HOME/.config/aerospace/aerospace.toml
+mkdir -p $HOME/.config/alacritty && ln -s $HOME/code/open-source/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+mkdir -p $HOME/.config/ohmyposh && ln -s $HOME/code/open-source/ohmyposh/p10k-nord.toml $HOME/.config/ohmyposh/p10k-nord.toml
 mkdir -p $HOME/.config/lvim && ln -s $HOME/code/open-source/lvim/config.lua $HOME/.config/lvim/config.lua
 mkdir -p $HOME/.config/tmux && ln -s $HOME/code/open-source/tmux/tmux.conf $HOME/.config/tmux/tmux.conf
-mkdir -p $HOME/.config/yazi && ln -s $HOME/code/open-source/yazi/theme.toml $HOME/.config/yazi/theme.toml 
+mkdir -p $HOME/.config/yazi && ln -s $HOME/code/open-source/yazi/theme.toml $HOME/.config/yazi/theme.toml
 
 # macos defaults
 defaults write com.apple.dock "autohide" -bool "true"
-defaults write com.apple.dock "tilesize" -int "8" 
+defaults write com.apple.dock "tilesize" -int "8"
 defaults write com.apple.dock "expose-group-apps" -bool "true"
 killall Dock
 
 defaults write com.apple.screencapture "location" -string "~/Pictures/screenshots"
 killall SystemUIServer
-
