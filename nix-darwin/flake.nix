@@ -41,72 +41,19 @@
         {
 
           imports = [
-            ./shell.nix
+            ./brew.nix
             ./cli.nix
+            ./macos.nix
             ./node.nix
+            ./shell.nix
           ];
 
           services.nix-daemon.enable = true;
           nix.settings.experimental-features = "nix-command flakes";
 
           nixpkgs.hostPlatform = "aarch64-darwin";
-          system = {
-            configurationRevision = self.rev or self.dirtyRev or null;
-            stateVersion = 4;
-            defaults = {
-              dock.autohide = true;
-              dock.tilesize = 8;
-              screencapture.location = "~/Pictures/screenshots";
-            };
 
-            keyboard = {
-              enableKeyMapping = true;
-              remapCapsLockToEscape = true;
-            };
-          };
-
-          nix-homebrew.autoMigrate = true;
-          homebrew = {
-            enable = true;
-            brews = [
-              "docker"
-            ];
-            casks = [
-              # browsers
-              "brave-browser"
-              "firefox"
-              "google-chrome"
-              "chromium"
-
-              # dev tools
-              "webstorm"
-              "vscodium"
-              "wezterm"
-              "slack"
-              "keepassxc"
-              "obsidian"
-              # "docker"
-
-              # other tools
-              "alt-tab"
-              # "raycast"
-              "shottr"
-              "aldente"
-              "flux"
-
-              "tunnelblick"
-
-              # media
-              "vlc"
-              "transmission"
-              "spotify"
-
-              # communicator
-              # "signal"
-              "whatsapp"
-            ];
-
-          };
+          system.configurationRevision = self.rev or self.dirtyRev or null;
         };
     in
     {
@@ -116,20 +63,15 @@
           nix-homebrew.darwinModules.nix-homebrew
           {
             nix-homebrew = {
-              enable = true;
-
               taps = {
                 "homebrew/homebrew-core" = homebrew-core;
                 "homebrew/homebrew-cask" = homebrew-cask;
               };
-
-              user = "przemyslawbeigert";
             };
           }
         ];
       };
 
-      # Expose the package set, including overlays, for convenience.
       darwinPackages = self.darwinConfigurations."Przemyslaws-MacBook-Air".pkgs;
     };
 }
