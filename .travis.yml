@@ -1,8 +1,0 @@
-language: bash
-os: osx
-env:
-  IS_CI: "true"
-install:
-  - ./prepare-macos.sh
-script:
-  ./test.sh
