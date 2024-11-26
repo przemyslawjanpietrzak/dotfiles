@@ -2,7 +2,6 @@
 
 {
     environment.systemPackages = with pkgs; [
-
         # cli
         atuin
         bat
@@ -14,6 +13,8 @@
         htop
         httpie
         prettyping
+        fish
+        lunarvim
         jq
         just
         lsd

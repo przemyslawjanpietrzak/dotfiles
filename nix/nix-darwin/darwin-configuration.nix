@@ -12,57 +12,15 @@ in  {
       "COLORTERM"="truecolor";
       "PROMPT_COMMAND"="history -a; history -n";
     };
-    shellAliases = {
-      "cdf"="cd $(fd --type=d | fzf)";
 
-      "ls"="lsd";
-      "l"="ls -l";
-      "la"="ls -a";
-      "lla"="ls -la";
-      "lt"="ls --tree";
-
-      ".."="cd ..";
-      "..."="cd ../..";
-      "...."="cd ../../..";
-
-      "vi"="lvim";
-      "lvi"="lvim";
-      "vif"="vi $(fzf --preview='bat --color=always {}')";
-
-      "pn"="pnpm";
-      "lg"="lazygit";
-
-      "pping"="prettyping";
-    };
   };
 
   imports = [ <home-manager/nix-darwin> ];
   services.nix-daemon.enable = true;
 
-  programs.zsh.enable = true;  
-  programs.zsh.enableSyntaxHighlighting = true;  
+  programs.zsh.enable = true;
+  programs.zsh.enableSyntaxHighlighting = true;
 
-  system = {
-    stateVersion = 4;
-
-    defaults = {
-      dock = {
-        autohide = true;
-        expose-group-by-app = true;
-        tilesize = 8;
-        largesize = 16;
-      };
-      screencapture.location = "~/Pictures/screenshots";
-      NSGlobalDomain = {
-        "com.apple.swipescrolldirection" = false;
-      };
-    };
-    
-    keyboard = {
-      enableKeyMapping = true;
-      remapCapsLockToEscape = true;
-    };
-  };
 
 
   users.users.przemyslawbeigert = {
@@ -150,12 +108,10 @@ in  {
       "vlc"
       "transmission"
       "spotify"
-      
+
       # communicator
       # "signal"
       "whatsapp"
     ];
   };
 }
-
-

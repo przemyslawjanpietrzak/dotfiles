@@ -58,10 +58,10 @@
     description = "beigert-nix";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
-
+      
     ];
     openssh.authorizedKeys.keys = [
-     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMLUu9ENqleZLYqwC8OpfLfNaHocfGExo/C6TTDerXbq przemyslawbiegert"
+     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMLUu9ENqleZLYqwC8OpfLfNaHocfGExo/C6TTDerXbq przemyslawbiegert" 
     ];
   };
 
@@ -76,11 +76,11 @@
         enable = true;
         theme = "robbyrussell";
         plugins = [
-          "git"
+	  "git"
           "kubectl"
           "helm"
           "docker"
-          "vi-mode"
+     	"vi-mode"
         ];
       };
     };
@@ -126,8 +126,8 @@ xclip
   };
 
    services.openssh = {
-        enable = true;
-        settings.PasswordAuthentication = false;
+	enable = true;
+	settings.PasswordAuthentication = false;
    };
 
   networking.firewall.allowedTCPPorts = [ 22 ];
