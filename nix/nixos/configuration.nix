@@ -58,64 +58,30 @@
     description = "beigert-nix";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
-
+      
     ];
     openssh.authorizedKeys.keys = [
-     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMLUu9ENqleZLYqwC8OpfLfNaHocfGExo/C6TTDerXbq przemyslawbiegert"
+     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMLUu9ENqleZLYqwC8OpfLfNaHocfGExo/C6TTDerXbq przemyslawbiegert" 
     ];
-  };
-
-
-#zsh
- programs = {
-    zsh = {
-      enable = true;
-      autosuggestions.enable = true;
-      syntaxHighlighting.enable = true;
-      ohMyZsh = {
-        enable = true;
-        theme = "robbyrussell";
-        plugins = [
-          "git"
-          "kubectl"
-          "helm"
-          "docker"
-          "vi-mode"
-        ];
-      };
-    };
   };
 
 
   programs.firefox.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.gc = {
+    automatic = true;
+    randomizedDelaySec = "14m";
+    options = "--delete-older-than 5d";
+  };
 
   virtualisation.docker.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [
-    vim
-    neovim
-    bat
-    home-manager
-    git
-    docker
-    antidote
-    python3
-    openvpn
-    zellij
-   fd
-   helix
-   fzf
-   ripgrep
-    hstr
-xclip
-
-   nomad_1_7
-   consul
-   k3s_1_30
+ programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+jetbrains.webstorm
   ];
 
 
@@ -125,9 +91,11 @@ xclip
     enableSSHSupport = true;
   };
 
+
+
    services.openssh = {
-        enable = true;
-        settings.PasswordAuthentication = false;
+	enable = true;
+	settings.PasswordAuthentication = false;
    };
 
   networking.firewall.allowedTCPPorts = [ 22 ];

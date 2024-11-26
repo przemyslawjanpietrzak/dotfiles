@@ -41,11 +41,11 @@
         {
 
           imports = [
-            ./brew.nix
-            ./cli.nix
-            ./macos.nix
-            ./node.nix
-            ./shell.nix
+            ./common/brew.nix
+            ./common/cli.nix
+            ./common/macos.nix
+            ./common/node.nix
+            ./common/shell.nix
           ];
 
           services.nix-daemon.enable = true;

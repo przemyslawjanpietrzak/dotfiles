@@ -12,6 +12,7 @@
   };
 
   programs = {
+    zsh.enable = true;
     fish.enable = true;
     fish.shellAliases = {
       "cdf" = "cd $(fd --type=d | fzf)";
@@ -30,7 +31,12 @@
       "lvi" = "lvim";
       "vif" = "vi $(fzf --preview='bat --color=always {}')";
 
+      "y" = "yarn";
       "pn" = "pnpm";
+
+      "ggpull" = "git pull";
+      "ggpush" = "git push";
+      "gfa" = "git fetch --all";
       "lg" = "lazygit";
 
       "pping" = "prettyping";
