@@ -10,7 +10,6 @@
   homebrew = {
     enable = true;
     brews = [
-      "docker"
     ];
     casks = [
       # browsers
@@ -26,11 +25,14 @@
       "slack"
       "keepassxc"
       "obsidian"
-      # "docker"
+      "zed"
+
+      # fonts
+      "font-fira-code-nerd-font"
 
       # other tools
       "alt-tab"
-      # "raycast"
+      "raycast"
       "shottr"
       "aldente"
       "flux"

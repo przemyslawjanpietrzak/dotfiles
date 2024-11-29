@@ -108,6 +108,10 @@ if.app-id = 'org.alacritty'
 run = "move-node-to-workspace 4"
 
 [[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+run = "move-node-to-workspace 4"
+
+[[on-window-detected]]
 if.app-id = 'com.apple.Notes'
 run = "move-node-to-workspace 7"
 
@@ -124,7 +128,7 @@ if.app-id = 'com.spotify.client'
 run = "move-node-to-workspace 10"
 
 [workspace-to-monitor-force-assignment]
-7 = 'built-in' 
-8 = 'built-in' 
-9 = 'built-in' 
-10 = 'built-in' 
+7 = 'built-in'
+8 = 'built-in'
+9 = 'built-in'
+10 = 'built-in'

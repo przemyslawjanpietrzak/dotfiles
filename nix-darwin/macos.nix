@@ -8,6 +8,10 @@
       dock.autohide = true;
       dock.tilesize = 8;
       screencapture.location = "~/Pictures/screenshots";
+      NSGlobalDomain.AppleInterfaceStyle = "Dark";
+      # NSGlobalDomain.KeyRepeat = 100;
+      NSGlobalDomain."com.apple.swipescrolldirection" = false;
+      NSGlobalDomain._HIHideMenuBar = true;
     };
 
     keyboard = {

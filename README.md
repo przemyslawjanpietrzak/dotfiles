@@ -1,5 +1,16 @@
 # Dotfiles
 
+## Provisioning
+
+```bahs
+xcode-select --install
+curl -sSf -L https://install.lix.systems/lix | sh -s -- install
+
+mkdir -p code
+mkdir -p code/open-source
+mkdir -p stuff
+```
+
 ## Darwin
 
 ```bash

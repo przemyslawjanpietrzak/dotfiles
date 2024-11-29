@@ -25,6 +25,12 @@
         wget
         yazi
         zoxide
+        zellij
+
+        aerospace
+        oh-my-posh
+
+        lunarvim
 
         # git
         git
@@ -35,5 +41,6 @@
         # ssh
         openssh
         sshs
-    ];
+    ]
 }
+sdfdsf
