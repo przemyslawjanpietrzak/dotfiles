@@ -19,6 +19,7 @@
         lsd
         procs
         ripgrep
+        rm-improved
         sd
         sshs
         tldr
@@ -41,6 +42,5 @@
         # ssh
         openssh
         sshs
-    ]
+    ];
 }
-sdfdsf

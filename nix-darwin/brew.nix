@@ -45,7 +45,7 @@
       "spotify"
 
       # communicator
-      # "signal"
+      "signal"
       "whatsapp"
     ];
 
