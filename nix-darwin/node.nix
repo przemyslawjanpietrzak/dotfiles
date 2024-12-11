@@ -3,6 +3,7 @@
 {
     environment.systemPackages = with pkgs; [
         bun
+        biome
         deno
         fnm
         nodejs_20

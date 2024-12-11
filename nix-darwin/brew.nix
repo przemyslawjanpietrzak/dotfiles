@@ -36,6 +36,7 @@
       "shottr"
       "aldente"
       "flux"
+      "nordvpn"
 
       "tunnelblick"
 
