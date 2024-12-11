@@ -43,7 +43,7 @@
       "ggpull" = "git pull";
       "ggpush" = "git push";
       "gfa" = "git fetch --all";
-
+      "gss" = "git status";
     };
   };
 }
