@@ -9,6 +9,7 @@
 
  - Vimium https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
  - Tab pinner: https://chromewebstore.google.com/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh
+ - React dev tools: https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 
  - Nord: https://chromewebstore.google.com/detail/nord/abehfkkfjlplnjadfcjiflnejblfmmpj
  - Momentum: https://chromewebstore.google.com/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca

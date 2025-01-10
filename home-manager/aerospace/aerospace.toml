@@ -112,6 +112,10 @@ if.app-id = 'com.github.wez.wezterm'
 run = "move-node-to-workspace 4"
 
 [[on-window-detected]]
+if.app-id = 'dev.zed.Zed'
+run = "move-node-to-workspace 5"
+
+[[on-window-detected]]
 if.app-id = 'com.apple.Notes'
 run = "move-node-to-workspace 7"
 
