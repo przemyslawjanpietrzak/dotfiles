@@ -41,7 +41,7 @@ powerline_symbol = ''
 foreground = '#e4e4e4'
 background = "#4c566a"
 
-template = '  {{ .Path }} '
+template = '  {{ .Folder }} '
 
 [blocks.segments.properties]
 home_icon = '~'
