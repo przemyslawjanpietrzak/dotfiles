@@ -44,6 +44,7 @@
             ./brew.nix
             ../common/cli.nix
             ./macos.nix
+            ./devtools.nix
             ../common/node.nix
             ../common/shell.nix
           ];
