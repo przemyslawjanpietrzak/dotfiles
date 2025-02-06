@@ -19,3 +19,4 @@
  - Stylus: https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
  - StayFocused: https://chromewebstore.google.com/detail/stayfocusd-block-distract/laankejkbhbdhmipfmgcngdelahlfoji
  - YT speed control: https://chromewebstore.google.com/detail/youtube-playback-speed-co/hdannnflhlmdablckfkjpleikpphncik
+ - YT skip sponsor: https://chromewebstore.google.com/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone
