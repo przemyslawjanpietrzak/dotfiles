@@ -6,7 +6,7 @@
         biome
         deno
         fnm
-        nodejs_20
+        nodejs_22
         pnpm
         yarn-berry
     ];

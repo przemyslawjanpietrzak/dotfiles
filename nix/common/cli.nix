@@ -30,6 +30,8 @@
         # aerospace
         oh-my-posh
 
+        imagemagick
+
         lunarvim
         
         # git
