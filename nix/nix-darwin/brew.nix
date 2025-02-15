@@ -10,6 +10,7 @@
   homebrew = {
     enable = true;
     brews = [
+      "yt-dlp"
     ];
     casks = [
       # browsers
