@@ -14,6 +14,7 @@
         ./ssh.nix
         ./devtools.nix
         ./docker.nix
+        ./i3wm.nix
 
         ../common/cli.nix
         ../common/shell.nix
