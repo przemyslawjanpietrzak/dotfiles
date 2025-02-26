@@ -13,6 +13,9 @@
     ".config/tmux/tmux.conf".source = ./tmux/tmux.conf;
     ".config/zellij/config.kdl".source = ./zellij/config.kdl;
     ".config/zed/settings.json".source = ./zed/settings.json;
+    ".config/i3/config".source = ./i3/config;
+    ".config/rofi/config.rasi".source = ./rofi/config.rasi;
+    ".config/rofi/nord.rasi".source = ./rofi/nord.rasi;
   };
 
   programs.home-manager.enable = true;
