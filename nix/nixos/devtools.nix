@@ -7,6 +7,7 @@
       brave
       ghostty
       jetbrains.pycharm-community-src
+      obsidian
       xclip
       zed-editor
     ];

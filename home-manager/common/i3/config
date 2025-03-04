@@ -1,5 +1,20 @@
 set $mod Mod1
 
+set $mm DP-1-1
+set $lm eDP-2
+
+workspace 1 output $mm
+workspace 2 output $mm
+workspace 3 output $mm
+workspace 4 output $mm
+workspace 5 output $mm
+workspace 6 output $lm
+workspace 7 output $lm
+workspace 8 output $lm
+workspace 9 output $lm
+workspace 0 output $lm
+
+
 font pango:monospace 8
 
 exec always feh --bs-scale ~/code/open-source/dotfiles/wallpeper.png
@@ -28,7 +43,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+Shift+d exec rofi -show run
+bindsym Ctrl+space exec rofi -show run
 
 bindsym $mod+Shift+h focus left
 bindsym $mod+Shift+j focus down
@@ -71,14 +86,13 @@ bindsym $mod+Shift+slash layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
@@ -91,6 +105,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
 
 # switch to workspace
 bindsym $mod+Shift+1 workspace number $ws1

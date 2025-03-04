@@ -15,6 +15,8 @@
         ./devtools.nix
         ./docker.nix
         ./i3wm.nix
+        ./k8s.nix
+        ./python.nix
 
         ../common/cli.nix
         ../common/shell.nix
