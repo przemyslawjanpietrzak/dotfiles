@@ -16,7 +16,7 @@ workspace 0 output $lm
 
 font pango:monospace 8
 
-# exec_always feh --bs-scale ~/code/open-source/dotfiles/wallpeper.png
+# exec_always --no-startup-id feh --bs-scale ~/code/open-source/dotfiles/wallpeper.png
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
