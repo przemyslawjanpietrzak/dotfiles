@@ -1,8 +1,10 @@
 {users, pkgs, ...}:
 
 {
-  users.users.nixosdevbox = {
-    packages = with pkgs; [
-    ];
-  };
+
+  environment.systemPackages = with pkgs; [
+    python314
+    uv
+    poetry
+  ];
 }

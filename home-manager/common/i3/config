@@ -1,6 +1,6 @@
 set $mod Mod1
 
-set $mm DP-1-1
+set $mm HDMI-1-1
 set $lm eDP-2
 
 workspace 1 output $mm
@@ -14,10 +14,9 @@ workspace 8 output $lm
 workspace 9 output $lm
 workspace 0 output $lm
 
-
 font pango:monospace 8
 
-exec always feh --bs-scale ~/code/open-source/dotfiles/wallpeper.png
+# exec_always feh --bs-scale ~/code/open-source/dotfiles/wallpeper.png
 
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -36,7 +35,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -83,7 +82,7 @@ bindsym $mod+Shift+slash layout toggle split
 # bindsym $mod+Shift+slash layout tiles horizontal vertical
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+# bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 # bindsym $mod+space focus mode_toggle
@@ -130,6 +129,11 @@ bindsym $mod+Shift+Ctrl+7 move container to workspace number $ws7
 bindsym $mod+Shift+Ctrl+8 move container to workspace number $ws8
 bindsym $mod+Shift+Ctrl+9 move container to workspace number $ws9
 bindsym $mod+Shift+Ctrl+0 move container to workspace number $ws10
+
+assign [class="obsidian"] $ws1
+assign [class="brave-browser"] $ws2
+assign [class="jetbrains-pycharm-ce"] $ws3
+assign [class="ghostty"] $ws4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
