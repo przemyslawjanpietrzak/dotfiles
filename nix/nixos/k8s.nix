@@ -15,11 +15,14 @@ in
     gnumake
 
     postgresql
-    libpq
+    # libpq
     
     kubectl
     kubernetes-helm
     telepresence2
+    k9s
+
+    redis
   ];
 
 }
