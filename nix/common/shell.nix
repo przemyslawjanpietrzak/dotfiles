@@ -44,6 +44,8 @@
       "ggpush" = "git push";
       "gfa" = "git fetch --all";
       "gss" = "git status";
+      "gl"="git log";
+      "glp"="git log --pretty=format:'%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s'";
     };
   };
 }
