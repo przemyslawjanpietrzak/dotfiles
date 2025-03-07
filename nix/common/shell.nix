@@ -37,9 +37,6 @@
 
       "pping" = "prettyping";
 
-      "y" = "yarn";
-      "pn" = "pnpm";
-
       "ggpull" = "git pull";
       "ggpush" = "git push";
       "gfa" = "git fetch --all";
