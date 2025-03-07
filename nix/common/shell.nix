@@ -14,7 +14,7 @@
   programs = {
     fish.enable = true;
     fish.interactiveShellInit = ''
-      oh-my-posh init fish  --config ~/.config/ohmyposh/pk10-nord.toml | source
+      oh-my-posh init fish --config ~/.config/ohmyposh/pk10-nord.toml | source
     '';
     fish.shellAliases = {
       "cdf" = "cd $(fd --type=d | fzf)";

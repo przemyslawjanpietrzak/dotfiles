@@ -20,6 +20,7 @@
 
         ../common/cli.nix
         ../common/shell.nix
+        ../common/node.nix
       ];
     };
   };
