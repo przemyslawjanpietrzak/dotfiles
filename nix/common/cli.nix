@@ -42,6 +42,7 @@
 
         # ssh
         openssh
+        openvpn
         sshs
     ];
 }
