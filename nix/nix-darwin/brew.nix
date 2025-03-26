@@ -40,6 +40,7 @@
       "nordvpn"
 
       "tunnelblick"
+      "openvpn-conect"
 
       # media
       "vlc"
