@@ -20,8 +20,6 @@
     packages = with pkgs; [
       jetbrains.webstorm
       jetbrains.pycharm-community-bin
-
-      zed-editor
     ];
   };
 

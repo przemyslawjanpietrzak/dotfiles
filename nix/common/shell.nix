@@ -28,6 +28,7 @@
       ".." = "cd ..";
       "..." = "cd ../..";
       "...." = "cd ../../..";
+      "....." = "cd ../../../..";
 
       "vi" = "lvim";
       "lvi" = "lvim";
@@ -40,6 +41,7 @@
       "ggpull" = "git pull";
       "ggpush" = "git push";
       "gfa" = "git fetch --all";
+      "gcb" = "git checkout -b"
       "gss" = "git status";
       "gl" = "git log";
       "glp" = "git log --pretty=format:'%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s'";

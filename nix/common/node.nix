@@ -9,8 +9,6 @@
     nodejs_22
     pnpm
     yarn-berry
-
-    # jetbrains.webstorm
   ];
 
   programs = {
