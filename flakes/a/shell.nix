@@ -1,4 +1,6 @@
-{ pkgs ? (import <nixpkgs> {}).pkgs }:
+{
+  pkgs ? (import <nixpkgs> { }).pkgs,
+}:
 with pkgs;
 mkShell {
   buildInputs = [

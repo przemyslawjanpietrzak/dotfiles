@@ -4,16 +4,15 @@
     autoMigrate = true;
     enable = true;
 
-
- user = "przemyslawbeigert";
+    user = "przemyslawbeigert";
   };
   homebrew = {
     enable = true;
     onActivation = {
-          autoUpdate = true;
-          upgrade = true;
-          # cleanup = "zap";
-        };
+      autoUpdate = true;
+      upgrade = true;
+      # cleanup = "zap";
+    };
     brews = [
       "yt-dlp"
     ];

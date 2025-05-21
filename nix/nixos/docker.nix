@@ -1,9 +1,19 @@
-{users, virtualisation, environment, pkgs, ...}:
+{
+  users,
+  virtualisation,
+  environment,
+  pkgs,
+  ...
+}:
 
 {
   virtualisation.docker.enable = true;
   users.users.nixosdevbox = {
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
+    ];
   };
 
   environment.systemPackages = with pkgs; [

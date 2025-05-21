@@ -1,10 +1,14 @@
-{users, pkgs, ...}:
+{ users, pkgs, ... }:
 
-let gtk = pkgs.google-cloud-sdk.withExtraComponents( with pkgs.google-cloud-sdk.components; [
-    gke-gcloud-auth-plugin
-  ]);
+let
+  gtk = pkgs.google-cloud-sdk.withExtraComponents (
+    with pkgs.google-cloud-sdk.components;
+    [
+      gke-gcloud-auth-plugin
+    ]
+  );
 
-in 
+in
 {
   users.users.nixosdevbox = {
     # packages = with pkgs; [    ];
@@ -16,7 +20,7 @@ in
 
     postgresql
     # libpq
-    
+
     kubectl
     kubernetes-helm
     telepresence2

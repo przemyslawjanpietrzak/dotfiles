@@ -1,18 +1,25 @@
-{users, lib, pkgs, ...}:
+{
+  users,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-        "webstorm"
-        "pycharm-community-src"
-        "raycast"
-        #"raycast-1.90.0"
-        "slack"
-        "obsidian"
-      ];
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "webstorm"
+      "pycharm-community-bin"
+      "raycast"
+      "slack"
+      "obsidian"
+      "spotify"
+    ];
   users.users.przemyslawbeigert = {
     packages = with pkgs; [
       jetbrains.webstorm
-      # jetbrains.pycharm-community-src
+      jetbrains.pycharm-community-bin
 
       zed-editor
     ];

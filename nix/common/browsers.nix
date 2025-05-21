@@ -1,4 +1,9 @@
-{users, pkgs, environment, ...}:
+{
+  users,
+  pkgs,
+  environment,
+  ...
+}:
 
 {
   users.users.przemyslawbeigert = {

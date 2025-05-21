@@ -1,4 +1,4 @@
-{environment, pkgs, ...}:
+{ environment, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -19,6 +19,5 @@
       "pn" = "pnpm";
     };
   };
-
 
 }

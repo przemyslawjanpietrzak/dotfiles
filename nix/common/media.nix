@@ -1,4 +1,9 @@
-{users, lib, pkgs, ...}:
+{
+  users,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   users.users.przemyslawbeigert = {

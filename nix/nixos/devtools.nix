@@ -1,4 +1,4 @@
-{users, pkgs, ...}:
+{ users, pkgs, ... }:
 
 {
   programs.nix-ld.enable = true;

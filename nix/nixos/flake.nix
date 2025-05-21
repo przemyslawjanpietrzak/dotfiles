@@ -5,23 +5,25 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
-    # Please replace my-nixos with your hostname
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [
-        ./configuration.nix
-        ./ssh.nix
-        ./devtools.nix
-        ./docker.nix
-        ./i3wm.nix
-        ./k8s.nix
-        ./python.nix
+  outputs =
+    { self, nixpkgs, ... }@inputs:
+    {
+      # Please replace my-nixos with your hostname
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./configuration.nix
+          ./ssh.nix
+          ./devtools.nix
+          ./docker.nix
+          ./i3wm.nix
+          ./k8s.nix
+          ./python.nix
 
-        ../common/cli.nix
-        ../common/shell.nix
-        ../common/node.nix
-      ];
+          ../common/cli.nix
+          ../common/shell.nix
+          ../common/node.nix
+        ];
+      };
     };
-  };
 }

@@ -1,4 +1,9 @@
-{users, pkgs, lib, ...}:
+{
+  users,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   environment = {
