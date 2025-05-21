@@ -10,50 +10,34 @@
   homebrew = {
     enable = true;
     onActivation = {
-          autoUpdate = true; # Equivalent to `brew update`
-          upgrade = true;    # Equivalent to `brew upgrade`
-         # cleanup = "zap";   # or "uninstall", to remove unmanaged packages
+          autoUpdate = true;
+          upgrade = true;
+          # cleanup = "zap";
         };
     brews = [
       "yt-dlp"
     ];
     casks = [
-      # browsers
-      "brave-browser"
-      "firefox"
-      "google-chrome"
+      # # browsers
       "chromium"
+      "firefox"
 
-      # dev tools
-      "webstorm"
-      # "ghostty"
-      "slack"
-      "keepassxc"
-      "obsidian"
+      # # dev tools
       "zed"
 
-      # fonts
+      # # fonts
       "font-fira-code-nerd-font"
 
-      # other tools
+      # # other tools
       "alt-tab"
       "raycast"
-      "shottr"
-      "aldente"
       "flux"
       "nordvpn"
+      "shottr"
 
-      "tunnelblick"
-      "openvpn-connect"
-
-      # media
-      "vlc"
-      "transmission"
-      "spotify"
-
-      # communicator
+      # # communicator
       "signal"
-      # "whatsapp"
+      # # "whatsapp"
     ];
 
   };

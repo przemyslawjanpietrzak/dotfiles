@@ -42,11 +42,15 @@
 
           imports = [
             ./brew.nix
-            ../common/cli.nix
             ./macos.nix
             ./devtools.nix
+            ../common/cli.nix
+            ../common/ide.nix
+            ../common/other-tools.nix
             ../common/node.nix
+            ../common/media.nix
             ../common/shell.nix
+            ../common/browsers.nix
           ];
 
           services.nix-daemon.enable = true;
