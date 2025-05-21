@@ -10,7 +10,7 @@
     pnpm
     yarn-berry
 
-    jetbrains.webstorm
+    # jetbrains.webstorm
   ];
 
   programs = {

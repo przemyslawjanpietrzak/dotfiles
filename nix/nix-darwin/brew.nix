@@ -9,6 +9,11 @@
   };
   homebrew = {
     enable = true;
+    onActivation = {
+          autoUpdate = true; # Equivalent to `brew update`
+          upgrade = true;    # Equivalent to `brew upgrade`
+         # cleanup = "zap";   # or "uninstall", to remove unmanaged packages
+        };
     brews = [
       "yt-dlp"
     ];
@@ -21,8 +26,7 @@
 
       # dev tools
       "webstorm"
-      "vscodium"
-      "wezterm"
+      # "ghostty"
       "slack"
       "keepassxc"
       "obsidian"
@@ -40,7 +44,7 @@
       "nordvpn"
 
       "tunnelblick"
-      "openvpn-conect"
+      "openvpn-connect"
 
       # media
       "vlc"
@@ -49,7 +53,7 @@
 
       # communicator
       "signal"
-      "whatsapp"
+      # "whatsapp"
     ];
 
   };
