@@ -9,7 +9,6 @@
     fd
     fzf
     delta
-    googler
     htop
     httpie
     prettyping
