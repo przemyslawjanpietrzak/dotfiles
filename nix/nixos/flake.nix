@@ -17,7 +17,6 @@
         ./i3wm.nix
         ./k8s.nix
         ./python.nix
-        ./nordvpn.nix
 
         ../common/cli.nix
         ../common/shell.nix
