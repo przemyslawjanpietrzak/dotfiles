@@ -23,6 +23,7 @@
 
       # # dev tools
       "zed"
+      "obsidian"
 
       # # fonts
       "font-fira-code-nerd-font"
@@ -33,6 +34,13 @@
       "flux"
       "nordvpn"
       "shottr"
+      "keepassxc"
+      "slack"
+
+      # netowrk
+      "openvpn-connect"
+
+      "spotify"
 
       # # communicator
       "signal"

@@ -46,7 +46,6 @@
             ./devtools.nix
             ../common/cli.nix
             ../common/ide.nix
-            ../common/other-tools.nix
             ../common/node.nix
             ../common/media.nix
             ../common/shell.nix
