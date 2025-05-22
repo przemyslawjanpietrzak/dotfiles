@@ -15,11 +15,13 @@
   };
 
   environment.systemPackages = with pkgs; [
-    python314
+    python313
     uv
     poetry
     ruff
     black
+    pipx
+    pre-commit
   ];
 
   users.users.nixosdevbox = {

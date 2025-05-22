@@ -10,16 +10,11 @@ let
 
 in
 {
-  users.users.nixosdevbox = {
-    # packages = with pkgs; [    ];
-  };
-
   environment.systemPackages = with pkgs; [
     gtk
     gnumake
 
     postgresql
-    # libpq
 
     kubectl
     kubernetes-helm
