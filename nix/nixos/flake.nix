@@ -2,7 +2,7 @@
   description = "A simple NixOS flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
@@ -17,6 +17,7 @@
         ./i3wm.nix
         ./k8s.nix
         ./python.nix
+        ./nordvpn.nix
 
         ../common/cli.nix
         ../common/shell.nix
