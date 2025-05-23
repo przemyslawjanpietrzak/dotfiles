@@ -16,7 +16,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      homeConfigurations."przemyslawbeigert" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."przemyslawjanbeigert" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         modules = [

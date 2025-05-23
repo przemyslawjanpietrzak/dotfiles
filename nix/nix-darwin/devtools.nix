@@ -1,7 +1,7 @@
 { users, pkgs, ... }:
 
 {
-  users.users.przemyslawbeigert = {
+  users.users.przemyslawjanbeigert = {
     packages = with pkgs; [
       aerospace
     ];

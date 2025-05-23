@@ -4,7 +4,7 @@
     autoMigrate = true;
     enable = true;
 
-    user = "przemyslawbeigert";
+    user = "przemyslawjanbeigert";
   };
   homebrew = {
     enable = true;
