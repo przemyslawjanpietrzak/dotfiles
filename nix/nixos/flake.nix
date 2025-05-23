@@ -18,11 +18,12 @@
           ./docker.nix
           ./i3wm.nix
           ./k8s.nix
-          ./python.nix
+          ./ide.nix
 
           ../common/cli.nix
           ../common/shell.nix
           ../common/node.nix
+          ../common/python.nix
         ];
       };
     };

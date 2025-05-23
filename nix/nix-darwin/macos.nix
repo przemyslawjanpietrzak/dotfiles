@@ -1,5 +1,8 @@
 { system, ... }:
 
+let
+  wallpaper = ../../wallpeper.png;
+in
 {
   system = {
     # configurationRevision = self.rev or self.dirtyRev or null;
@@ -7,9 +10,9 @@
     defaults = {
       dock.autohide = true;
       dock.tilesize = 8;
-      screencapture.location = "~/Pictures/screenshots";
+
       NSGlobalDomain.AppleInterfaceStyle = "Dark";
-      # NSGlobalDomain.KeyRepeat = 100;
+      NSGlobalDomain.KeyRepeat = 100;
       NSGlobalDomain."com.apple.swipescrolldirection" = false;
       NSGlobalDomain._HIHideMenuBar = true;
     };

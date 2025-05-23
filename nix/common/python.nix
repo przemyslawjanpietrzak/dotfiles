@@ -16,24 +16,12 @@
 
   environment.systemPackages = with pkgs; [
     python313
+    python312Packages.ipython
     uv
-    poetry
     ruff
-    black
     pipx
     pre-commit
+    nix-index
   ];
-
-  users.users.nixosdevbox = {
-    packages = with pkgs; [
-      jetbrains.pycharm-community-src
-    ];
-  };
-
-  programs = {
-    fish.shellAliases = {
-      "po" = "poetry";
-    };
-  };
 
 }

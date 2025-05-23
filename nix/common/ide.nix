@@ -16,7 +16,7 @@
       "obsidian"
       "spotify"
     ];
-  users.users.przemyslawbeigert = {
+  users.users.przemyslawjanbeigert = {
     packages = with pkgs; [
       jetbrains.webstorm
       jetbrains.pycharm-community-bin

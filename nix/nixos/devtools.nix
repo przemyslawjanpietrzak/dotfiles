@@ -10,16 +10,9 @@
     packages = with pkgs; [
       brave
       ghostty
-
       xclip
-
       obsidian
-
-      zed-editor
-      jetbrains.idea-community-src
-
       keepassxc
-
       nix-index
     ];
   };

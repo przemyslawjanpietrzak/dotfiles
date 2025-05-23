@@ -33,9 +33,9 @@
             ../common/cli.nix
             ../common/ide.nix
             ../common/node.nix
-            ../common/media.nix
+            ../common/python.nix
             ../common/shell.nix
-            ../common/browsers.nix
+            ../common/k8s.nix
           ];
 
           services.nix-daemon.enable = true;
@@ -52,7 +52,6 @@
           configuration
         ];
       };
-
       darwinPackages = self.darwinConfigurations."Przemyslaws-MacBook-Pro".pkgs;
     };
 }
