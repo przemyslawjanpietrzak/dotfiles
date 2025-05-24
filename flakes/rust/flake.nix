@@ -32,8 +32,8 @@
             ];
             RUST_SRC_PATH = rustPlatform.rustLibSrc;
             shellHook = ''
-                fish
-                 '';
+              fish
+            '';
           };
       }
     );

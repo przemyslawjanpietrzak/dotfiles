@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
+{ config, home-manager, pkgs, ... }:
 
 {
 
-  home.file = {
+   home-manager.users.przemyslawjanbeigert.home.file = {
     ".config/aerospace/aerospace.toml".source = ./aerospace/aerospace.toml;
     ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
     ".config/fish/config.fish".source = ./fish/config.fish;
@@ -18,6 +18,4 @@
     ".config/zellij/config.kdl".source = ./zellij/config.kdl;
     ".ideavimrc".source = ./ideavim/.ideavimrc;
   };
-
-  programs.home-manager.enable = true;
 }

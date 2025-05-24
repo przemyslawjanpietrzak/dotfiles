@@ -27,16 +27,20 @@
       configuration =
         { pkgs, ... }:
         {
-
           imports = [
             ./macos.nix
             ./other.nix
+            ./brew2.nix
+            ./home.nix
+
             ../common/cli.nix
             ../common/ide.nix
             ../common/node.nix
             ../common/python.nix
             ../common/shell.nix
             ../common/k8s.nix
+
+            ../../home-manager/common/home.nix
           ];
 
           # services.nix-daemon.enable = true;
@@ -47,8 +51,25 @@
     in
     {
       darwinConfigurations."Przemyslaws-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+        inherit system;
         modules = [
           configuration
+          {
+            nixpkgs.hostPlatform = system;
+            system.primaryUser = "przemyslawjanbeigert";
+            users.users."przemyslawjanbeigert" = {
+              name = "przemyslawjanbeigert";
+              home = "/Users/przemyslawjanbeigert";
+            };
+          }
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.przemyslawjanbeigert = {
+              home.stateVersion = "24.05";
+            };
+          }
         ];
       };
       darwinPackages = self.darwinConfigurations."Przemyslaws-MacBook-Pro".pkgs;

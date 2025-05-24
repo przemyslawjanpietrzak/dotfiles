@@ -7,7 +7,7 @@ in
   system = {
     # configurationRevision = self.rev or self.dirtyRev or null;
     stateVersion = 6;
-    # defaults = {
+    defaults = {
     #   dock.autohide = true;
     #   dock.tilesize = 8;
 
@@ -15,7 +15,7 @@ in
     #   NSGlobalDomain.KeyRepeat = 100;
     #   NSGlobalDomain."com.apple.swipescrolldirection" = false;
     #   NSGlobalDomain._HIHideMenuBar = true;
-    # };
+    };
 
     keyboard = {
       enableKeyMapping = true;
