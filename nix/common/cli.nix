@@ -26,7 +26,6 @@
     zoxide
     zellij
 
-    # aerospace
     oh-my-posh
 
     imagemagick

@@ -1,11 +1,11 @@
 { ... }:
 {
-  nix-homebrew = {
-    autoMigrate = true;
-    enable = true;
+  # nix-homebrew = {
+  #   autoMigrate = true;
+  #   enable = true;
 
-    user = "przemyslawjanbeigert";
-  };
+  #   user = "przemyslawjanbeigert";
+  # };
   homebrew = {
     enable = true;
     onActivation = {
@@ -17,34 +17,34 @@
       "yt-dlp"
     ];
     casks = [
-      # # browsers
-      "chromium"
-      "firefox"
+      # # # browsers
+      # "chromium"
+      # "firefox"
 
-      # # dev tools
-      "zed"
-      "obsidian"
+      # # # dev tools
+      # "zed"
+      # "obsidian"
 
-      # # fonts
-      "font-fira-code-nerd-font"
+      # # # fonts
+      # "font-fira-code-nerd-font"
 
-      # # other tools
-      "alt-tab"
-      "raycast"
-      "flux"
-      "nordvpn"
-      "shottr"
-      "keepassxc"
-      "slack"
+      # # # other tools
+      # "alt-tab"
+      # "raycast"
+      # "flux"
+      # "nordvpn"
+      # "shottr"
+      # "keepassxc"
+      # "slack"
 
-      # netowrk
-      "openvpn-connect"
+      # # netowrk
+      # "openvpn-connect"
 
-      "spotify"
+      # "spotify"
 
-      # # communicator
-      "signal"
-      # # "whatsapp"
+      # # # communicator
+      # "signal"
+      # # # "whatsapp"
     ];
 
   };

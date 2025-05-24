@@ -30,6 +30,7 @@
 
           imports = [
             ./macos.nix
+            ./other.nix
             ../common/cli.nix
             ../common/ide.nix
             ../common/node.nix
@@ -38,11 +39,9 @@
             ../common/k8s.nix
           ];
 
-          services.nix-daemon.enable = true;
+          # services.nix-daemon.enable = true;
           nix.settings.experimental-features = "nix-command flakes";
-
           nixpkgs.hostPlatform = "aarch64-darwin";
-
           system.configurationRevision = self.rev or self.dirtyRev or null;
         };
     in
