@@ -30,7 +30,7 @@
           imports = [
             ./macos.nix
             ./other.nix
-            ./brew2.nix
+            ./brew.nix
             ./home.nix
 
             ../common/cli.nix

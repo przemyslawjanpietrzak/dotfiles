@@ -15,6 +15,7 @@
     jq
     just
     lsd
+    pastel
     procs
     ripgrep
     rm-improved
