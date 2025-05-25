@@ -8,9 +8,7 @@
     taps = [
       "homebrew/cask"
     ];
-    brews = [
-      "neofetch"
-    ];
+    brews = [];
     casks = [
       # browsers
       "brave-browser"
