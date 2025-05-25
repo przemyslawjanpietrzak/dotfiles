@@ -4,7 +4,6 @@
 
    home-manager.users.przemyslawjanbeigert.home.file = {
     ".config/aerospace/aerospace.toml".source = ./aerospace/aerospace.toml;
-    ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
     ".config/fish/config.fish".source = ./fish/config.fish;
     ".config/git/config".source = ./git/config;
     ".config/git/ignore".source = ./git/ignore;

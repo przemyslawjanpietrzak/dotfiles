@@ -1,8 +1,5 @@
 { system, ... }:
 
-let
-  wallpaper = ../../wallpeper.png;
-in
 {
   system = {
     # configurationRevision = self.rev or self.dirtyRev or null;
@@ -20,6 +17,7 @@ in
     keyboard = {
       enableKeyMapping = true;
       remapCapsLockToEscape = true;
+      swapLeftCtrlAndFn = true;
     };
   };
 }
