@@ -31,7 +31,6 @@
             ./macos.nix
             ./other.nix
             ./brew.nix
-            ./home.nix
 
             ../common/cli.nix
             ../common/ide.nix

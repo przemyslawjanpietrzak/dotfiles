@@ -5,6 +5,7 @@
     # cli
     atuin
     bat
+    choose
     dust
     fd
     fzf
