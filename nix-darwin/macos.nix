@@ -15,8 +15,8 @@
 
       NSGlobalDomain = {
         AppleInterfaceStyle = "Dark";
-        KeyRepeat = 3;
-        InitialKeyRepeat = 20;
+        # KeyRepeat = 3;
+        # InitialKeyRepeat = 20;
         ApplePressAndHoldEnabled = true;
         "com.apple.swipescrolldirection" = false;
         _HIHideMenuBar = true;

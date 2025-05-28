@@ -1,0 +1,59 @@
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+
+NORD0=0xff2E3440
+NORD1=0xff3B4252
+NORD2=0xff434C5E
+NORD3=0xff4C566A
+NORD4=0xffD8DEE9
+NORD5=0xffE5E9F0
+NORD6=0xffECEFF4
+NORD7=0xff8FBCBB
+NORD8=0xff88C0D0
+NORD9=0xff81A1C1
+NORD10=0xff5E81AC
+NORD11=0xffBF616A
+NORD12=0xffD08770
+NORD13=0xffEBCB8B
+NORD14=0xffA3BE8C
+NORD15=0xffB48EAD
+
+sketchybar --bar position=top height=35 blur_radius=25 color=$NORD0
+
+default=(
+  padding_left=4
+  padding_right=4
+  icon.font="Hack Nerd Font:Bold:17.0"
+  label.font="Hack Nerd Font:Bold:14.0"
+  icon.color=0xffffffff
+  label.color=0xffffffff
+  icon.padding_left=4
+  icon.padding_right=4
+  label.padding_left=4
+  label.padding_right=4
+)
+sketchybar --default "${default[@]}"
+
+
+sketchybar --add item apple left \
+           --set apple icon= icon.font.size=16 width=22 padding_left=0 y_offset=1
+
+sketchybar --add item front_app left \
+           --set front_app icon.drawing=off script="$PLUGIN_DIR/front_app.sh" \
+           --subscribe front_app front_app_switched
+
+sketchybar --add item clock right \
+           --set clock update_freq=10 icon= script="$PLUGIN_DIR/clock.sh" \
+           --add item calendar right \
+           --set calendar update_freq=3600 icon= script="$PLUGIN_DIR/calendar.sh" \
+           --add item volume right \
+           --set volume script="$PLUGIN_DIR/volume.sh" \
+           --subscribe volume volume_change \
+           --add item battery right \
+           --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+           --subscribe battery system_woke power_source_change  \
+           --add item ram right \
+           --set ram update_freq=60 icon= script="$PLUGIN_DIR/ram.sh" \
+           --add item cpu right \
+           --set cpu update_freq=60 icon= script="$PLUGIN_DIR/cpu.sh"
+
+sketchybar --update

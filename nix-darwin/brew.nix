@@ -14,14 +14,17 @@
       "brave-browser"
       "chromium"
       "firefox"
+
       # devtools
       "zed"
       "ghostty"
       "obsidian"
-      # other
+
+      # fonts
       "font-fira-code-nerd-font"
       "font-hack-nerd-font"
 
+      # other
       "alt-tab"
       "raycast"
       "flux"
@@ -29,8 +32,10 @@
       "shottr"
       "keepassxc"
       "slack"
+
       # network
       "openvpn-connect"
+
       # media
       "spotify"
       "vlc"
