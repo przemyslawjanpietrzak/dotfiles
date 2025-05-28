@@ -20,6 +20,8 @@
       "obsidian"
       # other
       "font-fira-code-nerd-font"
+      "font-hack-nerd-font"
+
       "alt-tab"
       "raycast"
       "flux"
