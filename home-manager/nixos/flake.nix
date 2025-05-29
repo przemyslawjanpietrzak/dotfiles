@@ -21,7 +21,7 @@
 
         modules = [
           ./user.nix
-          ../common/home.nix
+          ./home.nix
         ];
       };
     };
