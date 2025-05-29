@@ -17,10 +17,10 @@
           ./devtools.nix
           ./docker.nix
           ./i3wm.nix
-          ./k8s.nix
           ./ide.nix
 
           ../common/cli.nix
+          ../common/k8s.nix
           ../common/shell.nix
           ../common/node.nix
           ../common/python.nix
