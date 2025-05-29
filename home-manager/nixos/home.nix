@@ -10,6 +10,7 @@
     ".config/i3/config".source = ../configs/i3/config;
     ".config/lazygit/config.yml".source = ../configs/lazygit/config.yml;
     ".config/lvim/config.lua".source = ../configs/lvim/config.lua;
+    ".config/lsd".source = ../configs/lsd;
     ".config/ohmyposh/pk10-nord.toml".source = ../configs/ohmyposh/p10k-nord.toml;
     ".config/rofi/config.rasi".source = ../configs/rofi/config.rasi;
     ".config/rofi/nord.rasi".source = ../configs/rofi/nord.rasi;

@@ -1,0 +1,38 @@
+user: "#ebcb8b"        # aurora yellow
+group: "#a3be8c"       # aurora green
+permission:
+  read: "#A3BE8C"         # Nord14
+  write: "#EBCB8B"        # Nord13
+  exec: "#BF616A"         # Nord11
+  exec-sticky: "#B48EAD"  # Nord15
+  no-access: "#4C566A"    # Nord3
+  octal: "#81A1C1"        # Nord9
+  acl: "#88C0D0"          # Nord8
+  context: "#8FBCBB"      # Nord7
+date:
+  hour-old: "#88c0d0"     # frost 2
+  day-old: "#81a1c1"      # frost 3
+  older: "#5e81ac"        # frost 4
+size:
+  none: "#4C566A"         # Nord3
+  small: "#E5E9F0"        # Nord5
+  medium: "#D8DEE9"       # Nord4
+  large: "#B48EAD"        # Nord15
+inode:
+  valid: "#A3BE8C"        # Nord14
+  invalid: "#4C566A"      # Nord3
+links:
+  valid: "#A3BE8C"        # Nord14
+  invalid: "#4C566A"      # Nord3
+tree-edge: "#4C566A"      # Nord3
+git-status:
+  default: "#4C566A"         # Nord3
+  unmodified: "#4C566A"      # Nord3
+  ignored: "#4C566A"         # Nord3
+  new-in-index: "#A3BE8C"    # Nord14
+  new-in-workdir: "#A3BE8C"  # Nord14
+  typechange: "#EBCB8B"      # Nord13
+  deleted: "#BF616A"         # Nord11
+  renamed: "#A3BE8C"         # Nord14
+  modified: "#EBCB8B"        # Nord13
+  conflicted: "#BF616A"      # Nord11
