@@ -1,3 +1,5 @@
+source ./functions/mkcd.fish
+
 if status is-interactive
     fish_vi_key_bindings
     oh-my-posh init fish --config ~/.config/ohmyposh/pk10-nord.toml | source

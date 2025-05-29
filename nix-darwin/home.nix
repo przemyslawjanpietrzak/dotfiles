@@ -10,6 +10,7 @@
     ".config/aerospace/aerospace.toml".source = ../home-manager/configs/aerospace/aerospace.toml;
     ".config/bat/config".source = ../home-manager/configs/bat/config;
     ".config/fish/config.fish".source = ../home-manager/configs/fish/config.fish;
+    ".config/fish/functions".source = ../home-manager/configs/fish/functions;
     ".config/git/config".source = ../home-manager/configs/git/config;
     ".config/git/ignore".source = ../home-manager/configs/git/ignore;
     "Library/Application\ Support/jesseduffield/lazygit/config.yml".source =
