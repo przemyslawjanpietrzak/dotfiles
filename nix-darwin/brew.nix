@@ -40,6 +40,7 @@
       "spotify"
       "vlc"
       "signal"
+      "whatsapp"
     ];
   };
 }
