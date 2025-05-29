@@ -33,7 +33,6 @@ default=(
 )
 sketchybar --default "${default[@]}"
 
-
 sketchybar --add item apple left \
            --set apple icon= icon.font.size=16 width=22 padding_left=0 y_offset=1
 

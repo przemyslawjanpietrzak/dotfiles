@@ -1,4 +1,4 @@
-{ system, services, environment, launchd, pkgs, ... }:
+{ system, services, environment, pkgs, ... }:
 
 {
   services.sketchybar = {

@@ -8,6 +8,7 @@
     ".config/git/config".source = ./git/config;
     ".config/git/ignore".source = ./git/ignore;
     ".config/i3/config".source = ./i3/config;
+    ".config/lazygit/config.yml".source = ./lazygit/config.yml;
     ".config/lvim/config.lua".source = ./lvim/config.lua;
     ".config/ohmyposh/pk10-nord.toml".source = ./ohmyposh/p10k-nord.toml;
     ".config/rofi/config.rasi".source = ./rofi/config.rasi;
