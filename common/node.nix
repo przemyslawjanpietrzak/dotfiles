@@ -15,6 +15,7 @@
     fish.shellAliases = {
       "y" = "yarn";
       "pn" = "pnpm";
+      "px" = "pnpm dlx";
     };
   };
 
