@@ -66,7 +66,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.przemyslawjanbeigert = {
-              home.stateVersion = "24.05";
+              home.stateVersion = "25.05";
             };
           }
         ];

@@ -2,6 +2,7 @@
   description = "A simple NixOS flake";
 
   inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
@@ -17,10 +18,10 @@
           ./devtools.nix
           ./docker.nix
           ./i3wm.nix
-          ./k8s.nix
           ./ide.nix
 
           ../common/cli.nix
+          ../common/k8s.nix
           ../common/shell.nix
           ../common/node.nix
           ../common/python.nix
