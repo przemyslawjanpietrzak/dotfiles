@@ -40,6 +40,15 @@ sketchybar --add item front_app left \
            --set front_app icon.drawing=off script="$PLUGIN_DIR/front_app.sh" \
            --subscribe front_app front_app_switched
 
+sketchybar --add item myspace left \
+           --set myspace script="$PLUGIN_DIR/aerospace.sh" \
+                    icon.drawing=off \
+                    background.color=$"$NORD3" \
+                    background.corner_radius=5 \
+                    label.padding_left=12 \
+                    label.padding_right=12 \
+                    update_freq=3
+
 sketchybar --add item clock right \
            --set clock update_freq=10 icon= script="$PLUGIN_DIR/clock.sh" \
            --add item calendar right \

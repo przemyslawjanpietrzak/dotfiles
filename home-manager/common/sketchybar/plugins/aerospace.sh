@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sketchybar --set "$NAME" label="$(sketchybar: /run/current-system/sw/bin/sketchybar list-workspaces --focused)"
+sketchybar --set "$NAME" label="$(aerospace list-workspaces --focused)"
