@@ -39,7 +39,7 @@
             ../common/shell.nix
             ../common/k8s.nix
 
-            ../home-manager/common/home.nix
+            ../home-manager/nix-darwin/home.nix
           ];
 
           # services.nix-daemon.enable = true;

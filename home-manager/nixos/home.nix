@@ -2,7 +2,7 @@
 
 {
 
-   home.file = {
+  home.file = {
     ".config/bat/config".source = ../common/bat/config;
     ".config/fish/config.fish".source = ../common/fish/config.fish;
     ".config/git/config".source = ../common/git/config;

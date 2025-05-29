@@ -1,21 +1,25 @@
-{ config, home-manager, pkgs, ... }:
+{
+  config,
+  home-manager,
+  pkgs,
+  ...
+}:
 
 {
-
-   home-manager.users.przemyslawjanbeigert.home.file = {
-    ".config/aerospace/aerospace.toml".source = ./aerospace/aerospace.toml;
-    ".config/bat/config".source = ./bat/config;
-    ".config/fish/config.fish".source = ./fish/config.fish;
-    ".config/git/config".source = ./git/config;
-    ".config/git/ignore".source = ./git/ignore;
-    ".config/lazygit/config.yml".source = ./lazygit/config.yml;
-    ".config/lvim/config.lua".source = ./lvim/config.lua;
-    ".config/ohmyposh/pk10-nord.toml".source = ./ohmyposh/p10k-nord.toml;
-    ".config/sketchybar".source = ./sketchybar;
-    ".config/rofi/nord.rasi".source = ./rofi/nord.rasi;
-    ".config/tmux/tmux.conf".source = ./tmux/tmux.conf;
-    ".config/zed/settings.json".source = ./zed/settings.json;
-    ".config/zellij/config.kdl".source = ./zellij/config.kdl;
-    ".ideavimrc".source = ./ideavim/.ideavimrc;
+  home-manager.users.przemyslawjanbeigert.home.file = {
+    ".config/aerospace/aerospace.toml".source = ../common/aerospace/aerospace.toml;
+    ".config/bat/config".source = ../common/bat/config;
+    ".config/fish/config.fish".source = ../common/fish/config.fish;
+    ".config/git/config".source = ../common/git/config;
+    ".config/git/ignore".source = ../common/git/ignore;
+    "Library/Application\ Support/jesseduffield/lazygit/config.yml".source =
+      ../common/lazygit/config.yml;
+    ".config/lvim/config.lua".source = ../common/lvim/config.lua;
+    ".config/ohmyposh/pk10-nord.toml".source = ../common/ohmyposh/p10k-nord.toml;
+    ".config/sketchybar".source = ../common/sketchybar;
+    ".config/rofi/nord.rasi".source = ../common/rofi/nord.rasi;
+    ".config/zed/settings.json".source = ../common/zed/settings.json;
+    ".config/zellij/config.kdl".source = ../common/zellij/config.kdl;
+    ".ideavimrc".source = ../common/ideavim/.ideavimrc;
   };
 }
