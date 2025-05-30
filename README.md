@@ -14,8 +14,7 @@ mkdir -p stuff
 ## Darwin
 
 ```bash
-nix run nix-darwin -- switch --flake ~/code/open-source/dotfiles/nix/nix-darwin/
-nix run home-manager -- switch --flake ~/code/open-source/dotfiles/home-manager/nix-darwin
+sudo darwin-rebuild switch --flake ~/code/open-source/dotfiles/nix-darwin/
 ```
 
 ## NixOs
