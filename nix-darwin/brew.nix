@@ -32,6 +32,7 @@
       "shottr"
       "keepassxc"
       "slack"
+      "balenaetcher"
 
       # network
       "openvpn-connect"
