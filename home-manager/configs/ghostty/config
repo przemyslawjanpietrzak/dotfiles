@@ -1,5 +1,1 @@
-window-decoration = false
-shell-integration = fish
-font-size=13
-
-
+theme = nord

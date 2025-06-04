@@ -33,6 +33,7 @@
       "keepassxc"
       "slack"
       "balenaetcher"
+      "caffeine"
 
       # network
       "openvpn-connect"

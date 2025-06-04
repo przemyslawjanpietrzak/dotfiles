@@ -1,4 +1,4 @@
-source ./functions/mkcd.fish
+source ~/.config/fish/functions/mkcd.fish
 
 if status is-interactive
     fish_vi_key_bindings
