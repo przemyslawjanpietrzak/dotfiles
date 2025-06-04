@@ -5,7 +5,7 @@
     variables = {
       "FZF_DEFAULT_OPTS" = "--height 40% --layout reverse --border";
       "FZF_TMUX" = "1";
-      "EDITOR" = "lvim";
+      "EDITOR" = "nvim";
       "COLORTERM" = "truecolor";
       "PROMPT_COMMAND" = "history -a; history -n";
     };
@@ -30,8 +30,7 @@
       "...." = "cd ../../..";
       "....." = "cd ../../../..";
 
-      "vi" = "lvim";
-      "lvi" = "lvim";
+      "vi" = "nvim";
       "vif" = "vi $(fzf --preview='bat --color=always {}')";
 
       "lg" = "lazygit";

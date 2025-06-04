@@ -35,9 +35,11 @@ keybinds {
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "Normal"; }
-        bind "w" { NewPane; TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
+        bind "w" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
         bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
+
+        bind "a" { ToggleFloatingPanes; }
     }
 
     move {

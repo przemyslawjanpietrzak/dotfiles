@@ -32,7 +32,7 @@
 
     imagemagick
 
-    lunarvim
+    neovim
 
     # git
     git
