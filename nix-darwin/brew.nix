@@ -27,6 +27,7 @@
       # other
       "alt-tab"
       "raycast"
+      "aldente"
       "flux"
       "nordvpn"
       "shottr"
