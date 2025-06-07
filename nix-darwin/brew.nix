@@ -35,6 +35,7 @@
       "slack"
       "balenaetcher"
       "caffeine"
+      "nextcloud"
 
       # network
       "openvpn-connect"
