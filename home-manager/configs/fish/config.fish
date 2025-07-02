@@ -5,6 +5,11 @@ if status is-interactive
     oh-my-posh init fish --config ~/.config/ohmyposh/pk10-nord.toml | source
     eval "$(atuin init fish --disable-up-arrow)"
     eval "$(zoxide init fish)"
+
+    set -Ux CARAPACE_BRIDGES 'zsh,fish,bash,inshellisense' # optional
+    carapace _carapace | source
+
     set fish_greeting
-    function fish_mode_prompt; end
+    function fish_mode_prompt
+    end
 end

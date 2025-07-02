@@ -8,12 +8,14 @@
     taps = [
       "homebrew/cask"
     ];
-    brews = [ ];
+    brews = [
+    ];
     casks = [
       # browsers
       "brave-browser"
       "chromium"
       "firefox"
+
 
       # devtools
       "zed"

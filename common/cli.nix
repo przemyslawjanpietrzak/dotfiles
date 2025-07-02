@@ -7,6 +7,7 @@
     bat
     choose
     dust
+    entr
     fd
     fzf
     delta
@@ -29,6 +30,7 @@
     zellij
 
     oh-my-posh
+    carapace
 
     imagemagick
 
