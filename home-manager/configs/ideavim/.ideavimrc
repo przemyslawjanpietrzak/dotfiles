@@ -1,3 +1,6 @@
 set rnu
 set multicursor
 
+nmap s <Action>(flash.search)
+xmap s <Action>(flash.search)
+

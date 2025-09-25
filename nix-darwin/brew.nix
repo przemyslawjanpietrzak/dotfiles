@@ -16,8 +16,8 @@
       "chromium"
       "firefox"
 
-
       # devtools
+      "webstorm"
       "zed"
       "ghostty"
       "obsidian"
@@ -46,6 +46,7 @@
       "spotify"
       "vlc"
       "signal"
+      "freetube"
       "whatsapp"
     ];
   };

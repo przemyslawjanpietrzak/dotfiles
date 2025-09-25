@@ -34,7 +34,7 @@
             ./home.nix
 
             ../common/cli.nix
-            ../common/ide.nix
+            # ../common/ide.nix
             ../common/node.nix
             ../common/python.nix
             ../common/shell.nix
