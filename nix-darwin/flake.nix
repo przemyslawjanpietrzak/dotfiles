@@ -49,7 +49,7 @@
         };
     in
     {
-      darwinConfigurations."Przemyslaws-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."MacBook-Pro-Przemyslaw" = nix-darwin.lib.darwinSystem {
         inherit system;
         modules = [
           configuration

@@ -6,7 +6,7 @@
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     taps = [
-      "homebrew/cask"
+      # "homebrew/cask"
     ];
     brews = [
     ];
@@ -16,8 +16,11 @@
       "chromium"
       "firefox"
 
+      "nikitabobko/tap/aerospace"
+
       # devtools
       "webstorm"
+      "pycharm-ce"
       "zed"
       "ghostty"
       "obsidian"
@@ -30,7 +33,7 @@
       "alt-tab"
       "raycast"
       "aldente"
-      "flux"
+      "flux-app"
       "nordvpn"
       "shottr"
       "keepassxc"
@@ -46,7 +49,6 @@
       "spotify"
       "vlc"
       "signal"
-      "freetube"
       "whatsapp"
     ];
   };
