@@ -79,7 +79,7 @@ ctrl-alt-shift-d = 'macos-native-minimize'
 ctrl-alt-shift-r = 'flatten-workspace-tree'
 
 ctrl-shift-tab = 'workspace-back-and-forth'
-ctrl-alt-shift-tab = 'move-node-to-monitor --wrap-around next'
+# ctrl-alt-shift-tab = 'move-node-to-monitor --wrap-around next'
 
 ctrl-shift-semicolon = 'mode service'
 

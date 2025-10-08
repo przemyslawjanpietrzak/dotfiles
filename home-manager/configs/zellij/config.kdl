@@ -124,7 +124,7 @@ keybinds {
         bind "d" { Detach; }
         bind "w" {
             LaunchOrFocusPlugin "session-manager" {
-                // floating true
+                floating true
                 move_to_focused_tab true
             };
             SwitchToMode "Normal";
