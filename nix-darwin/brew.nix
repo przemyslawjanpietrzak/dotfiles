@@ -50,6 +50,7 @@
       "vlc"
       "signal"
       "whatsapp"
+      "steam"
     ];
   };
 }

@@ -6,18 +6,18 @@
     atuin
     bat
     choose
+    delta
     dust
     entr
     fd
     fzf
-    delta
     htop
     httpie
-    prettyping
     jq
     just
     lsd
     pastel
+    prettyping
     procs
     ripgrep
     rm-improved
@@ -26,8 +26,8 @@
     tldr
     wget
     yazi
-    zoxide
     zellij
+    zoxide
 
     oh-my-posh
     carapace
