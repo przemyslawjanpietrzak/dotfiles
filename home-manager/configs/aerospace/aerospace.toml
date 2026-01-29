@@ -40,8 +40,8 @@ ctrl-alt-shift-j = 'move down'
 ctrl-alt-shift-k = 'move up'
 ctrl-alt-shift-l = 'move right'
 
-ctrl-shift-w = ['move-mouse monitor-lazy-center']
-ctrl-shift-e = ['move-mouse monitor-lazy-center']
+#ctrl-shift-w = ['move-mouse monitor-lazy-center']
+#ctrl-shift-e = ['move-mouse monitor-lazy-center']
 
 ctrl-alt-shift-w = ['move-node-to-monitor up', 'move-mouse monitor-lazy-center']
 ctrl-alt-shift-e = [
@@ -53,15 +53,25 @@ ctrl-shift-minus = 'resize smart -150'
 ctrl-shift-equal = 'resize smart +150'
 
 ctrl-shift-1 = 'workspace 1'
+ctrl-shift-q = 'workspace 1'
 ctrl-shift-2 = 'workspace 2'
+ctrl-shift-w = 'workspace 2'
 ctrl-shift-3 = 'workspace 3'
+ctrl-shift-e = 'workspace 3'
 ctrl-shift-4 = 'workspace 4'
+ctrl-shift-r = 'workspace 4'
 ctrl-shift-5 = 'workspace 5'
+ctrl-shift-t = 'workspace 5'
 ctrl-shift-6 = 'workspace 6'
+ctrl-shift-y = 'workspace 6'
 ctrl-shift-7 = 'workspace 7'
+ctrl-shift-u = 'workspace 7'
 ctrl-shift-8 = 'workspace 8'
+ctrl-shift-i = 'workspace 8'
 ctrl-shift-9 = 'workspace 9'
+ctrl-shift-o = 'workspace 9'
 ctrl-shift-0 = 'workspace 10'
+ctrl-shift-p = 'workspace 10'
 
 ctrl-alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 ctrl-alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']

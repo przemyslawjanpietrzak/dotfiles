@@ -9,6 +9,7 @@
       # "homebrew/cask"
     ];
     brews = [
+      "block-goose-cli"
     ];
     casks = [
       # browsers
@@ -51,6 +52,7 @@
       "signal"
       "whatsapp"
       "steam"
+      "transmission"
     ];
   };
 }

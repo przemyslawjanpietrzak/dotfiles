@@ -11,9 +11,9 @@
     {
       # Please replace my-nixos with your hostname
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+        system = "aarch64-linux";
         modules = [
-          ./configuration.nix
+          # ./configuration.nix
           ./ssh.nix
           ./devtools.nix
           ./docker.nix
