@@ -9,6 +9,8 @@
       # "homebrew/cask"
     ];
     brews = [
+      "opencode"
+      "sketchybar"
     ];
     casks = [
       # browsers
@@ -24,11 +26,11 @@
       "zed"
       "ghostty"
       "obsidian"
-      "opencode"
 
       # fonts
       "font-fira-code-nerd-font"
       "font-hack-nerd-font"
+      "font-sketchybar-app-font"
 
       # other
       "alt-tab"
@@ -42,7 +44,6 @@
       "balenaetcher"
       "caffeine"
       "nextcloud"
-      "sketchybar"
 
       # network
       "openvpn-connect"
