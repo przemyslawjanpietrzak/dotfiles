@@ -29,5 +29,4 @@
     ".config/nvim".source = ../home-manager/configs/nvim;
   };
 
-
 }

@@ -9,7 +9,6 @@
   outputs =
     { self, nixpkgs, ... }@inputs:
     {
-      # Please replace my-nixos with your hostname
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "aarch64-linux";
         modules = [

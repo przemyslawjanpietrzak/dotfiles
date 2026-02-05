@@ -47,6 +47,8 @@
     openvpn
     sshs
 
+    lima
+
     nixfmt-rfc-style
   ];
 }

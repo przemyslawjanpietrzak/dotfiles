@@ -9,7 +9,6 @@
       # "homebrew/cask"
     ];
     brews = [
-      "block-goose-cli"
     ];
     casks = [
       # browsers
@@ -25,6 +24,7 @@
       "zed"
       "ghostty"
       "obsidian"
+      "opencode"
 
       # fonts
       "font-fira-code-nerd-font"
@@ -42,9 +42,11 @@
       "balenaetcher"
       "caffeine"
       "nextcloud"
+      "sketchybar"
 
       # network
       "openvpn-connect"
+      "tailscale"
 
       # media
       "spotify"

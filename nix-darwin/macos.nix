@@ -7,12 +7,6 @@
 }:
 
 {
-  services.sketchybar = {
-    enable = true;
-    package = pkgs.sketchybar;
-    extraPackages = [ pkgs.aerospace ];
-  };
-
   system = {
     # configurationRevision = self.rev or self.dirtyRev or null;
     stateVersion = 6;
