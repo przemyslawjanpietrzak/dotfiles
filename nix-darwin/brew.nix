@@ -11,6 +11,7 @@
     brews = [
       "opencode"
       "sketchybar"
+      "mole"
     ];
     casks = [
       # browsers
