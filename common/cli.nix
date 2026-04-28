@@ -46,6 +46,7 @@
     openssh
     openvpn
     sshs
+    zrok
 
     lima
 

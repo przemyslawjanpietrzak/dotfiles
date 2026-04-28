@@ -2,13 +2,13 @@
 
 {
   environment.systemPackages = with pkgs; [
-    bun
+    # bun
     biome
-    deno
+    # deno
     fnm
-    nodejs_22
+    nodejs_24
     pnpm
-    yarn-berry
+    # yarn-berry
   ];
 
   programs = {
