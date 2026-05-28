@@ -11,6 +11,9 @@
   "vim_mode": true,
   "buffer_font_size": 13,
   "autosave": "on_focus_change",
+  "project_panel": {
+    "dock": "left",
+  },
   "telemetry": {
     "metrics": false,
     "diagnostics": false
