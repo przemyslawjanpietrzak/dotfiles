@@ -6,7 +6,6 @@
  - Dark reader: https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
  - Grid ruler: https://chromewebstore.google.com/detail/grid-ruler/joadogiaiabhmggdifljlpkclnpfncmj
  - Keepass: https://chromewebstore.google.com/detail/keepassxc-browser/oboonakemofpalcgghocfoadofidjkkk
- - One tab: https://chromewebstore.google.com/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=pl
 
  - Vimium https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
  - Tab pinner: https://chromewebstore.google.com/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh
@@ -21,10 +20,7 @@
  - StayFocused: https://chromewebstore.google.com/detail/stayfocusd-block-distract/laankejkbhbdhmipfmgcngdelahlfoji
 
  - YT speed control: https://chromewebstore.google.com/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=pl
- - YT dislike button: https://chromewebstore.google.com/detail/return-youtube-dislike/gebbhagfogifgggkldgodflihgfeippi?hl=pl
  - YT sponsor block: https://chromewebstore.google.com/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone?hl=pl
-
- - Image downloader: https://chromewebstore.google.com/detail/image-downloader-imageye/agionbommeaifngbhincahgmoflcikhm
 
  - Obsidian: https://chromewebstore.google.com/detail/obsidian-web-clipper/cnjifjpddelmedmihgijeibhnjfabmlf
  - Reader: https://chromewebstore.google.com/detail/reader-view/ecabifbgmdmgdllomnfinbmaellmclnh
