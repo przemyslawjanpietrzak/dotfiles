@@ -25,10 +25,16 @@
           mkShell {
             buildInputs = [
               cargo
+              cargo-generate
               rustc
               rustfmt
               pre-commit
+              rustup
               rustPackages.clippy
+              rust-analyzer
+              trunk
+              lld
+
             ];
             RUST_SRC_PATH = rustPlatform.rustLibSrc;
             shellHook = ''
